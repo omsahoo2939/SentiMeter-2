@@ -5,7 +5,7 @@ const Planets = () => {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
-    fetch('/api/planets')
+    fetch('http://localhost:3001/api/planets')
       .then(response => response.json())
       .then(data => setPlanets(data));
   }, []);
@@ -16,7 +16,7 @@ const Planets = () => {
       <ul>
         {planets.map(planet => (
           <li key={planet._id}>
-            <Link to={`/planets/${planet._id}`}>{planet.name}</Link>
+            <Link to={`/planets/${planet.id}`}>{planet.name}</Link>
           </li>
         ))}
       </ul>

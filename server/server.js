@@ -135,7 +135,7 @@ app.get('/api/characters/:id/planets', async (req, res) => {
     try {
         const character = await db.collection('characters').findOne({ id: characterId });
         const planet = await db.collection('planets').findOne({ id: character.homeworld });
-       
+        
         res.json(planet);
 
     } catch (error) {

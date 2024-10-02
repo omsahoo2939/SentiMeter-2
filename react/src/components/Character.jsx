@@ -48,8 +48,9 @@ const Character = () => {
 
   return (
     <div>
-      <h1>{character.name}</h1>
-      <p>Homeworld: {planet?.name}</p>
+      <h1>{character?.name}</h1>
+      <p>Homeworld: {planet?.name}</p> 
+      
       <h2>Films:</h2>
       <ul>
         {films.map(film => (

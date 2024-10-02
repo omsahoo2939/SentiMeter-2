@@ -8,15 +8,15 @@ const Planet = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch(`/api/planets/${id}`)
+    fetch(`http://localhost:3001/api/planets/${id}`)
       .then(response => response.json())
       .then(data => setPlanet(data));
 
-    fetch(`/api/planets/${id}/films`)
+    fetch(`http://localhost:3001/api/planets/${id}/films`)
       .then(response => response.json())
       .then(data => setFilms(data));
 
-    fetch(`/api/planets/${id}/characters`)
+    fetch(`http://localhost:3001/api/planets/${id}/characters`)
       .then(response => response.json())
       .then(data => setCharacters(data));
   }, [id]);
@@ -41,3 +41,5 @@ const Planet = () => {
     </div>
   );
 };
+
+export default Planet;

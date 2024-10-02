@@ -8,15 +8,15 @@ const Film = () => {
   const [planets, setPlanets] = useState([]);
 
   useEffect(() => {
-    fetch(`/api/films/${id}`)
+    fetch(`http://localhost:3001/api/films/${id}`)
       .then(response => response.json())
       .then(data => setFilm(data));
 
-    fetch(`/api/films/${id}/characters`)
+    fetch(`http://localhost:3001/api/films/${id}/characters`)
       .then(response => response.json())
       .then(data => setCharacters(data));
 
-    fetch(`/api/films/${id}/planets`)
+    fetch(`http://localhost:3001/api/films/${id}/planets`)
       .then(response => response.json())
       .then(data => setPlanets(data));
   }, [id]);
@@ -29,15 +29,17 @@ const Film = () => {
       <h2>Characters:</h2>
       <ul>
         {characters.map(character => (
-          <li key={character._id}>{character.name}</li>
+          <li key={character.id}>{character.name}</li>
         ))}
       </ul>
       <h2>Planets:</h2>
       <ul>
         {planets.map(planet => (
-          <li key={planet._id}>{planet.name}</li>
+          <li key={planet.id}>{planet.name}</li>
         ))}
       </ul>
     </div>
   );
 };
+
+export default Film;
