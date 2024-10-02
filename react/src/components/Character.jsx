@@ -1,60 +1,41 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const Character = () => {
   const { id } = useParams();
-  const [character, setCharacter] = useState(null);
+  const [character, setCharacters] = useState(null);
   const [films, setFilms] = useState([]);
-  const [planet, setPlanet] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [planet, setPlanets] = useState(null);
 
   useEffect(() => {
-    const fetchCharacterData = async () => {
-      try {
-        const characterResponse = await fetch(`http://localhost:3001/api/characters/${id}`);
-        if (!characterResponse.ok) {
-          throw new Error(`Error fetching character: ${characterResponse.statusText}`);
-        }
-        const characterData = await characterResponse.json();
-        setCharacter(characterData);
+    fetch(`http://localhost:3001/api/characters/${id}`)
+      .then(response => response.json())
+      .then(data => setCharacters(data));
 
-        const filmsResponse = await fetch(`http://localhost:3001/api/characters/${id}/films`);
-        if (!filmsResponse.ok) {
-          throw new Error(`Error fetching films: ${filmsResponse.statusText}`);
-        }
-        const filmsData = await filmsResponse.json();
-        setFilms(filmsData);
+    fetch(`http://localhost:3001/api/characters/${id}/films`)
+      .then(response => response.json())
+      .then(data => setFilms(data));
 
-        const planetResponse = await fetch(`http://localhost:3001/api/characters/${id}/planets`);
-        if (!planetResponse.ok) {
-          throw new Error(`Error fetching planet: ${planetResponse.statusText}`);
-        }
-        const planetData = await planetResponse.json();
-        setPlanet(planetData);
-
-        setLoading(false);
-      } catch (err) {
-        setError(err.message);
-        setLoading(false);
-      }
-    };
-
-    fetchCharacterData();
+    fetch(`http://localhost:3001/api/characters/${id}/planets`)
+      .then(response => response.json())
+      .then(data => setPlanets(data));
   }, [id]);
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
 
   return (
     <div>
       <h1>{character?.name}</h1>
+      <p>Height: {character?.height}</p>
+      <p>Mass: {character?.mass}</p>
+      <p>Born: {character?.birth_year}</p>
+
       <p>Homeworld: {planet?.name}</p> 
       
-      <h2>Films:</h2>
+      <h2>Films appeared in:</h2>
       <ul>
         {films.map(film => (
-          <li key={film._id}>{film.title}</li>
+          <li key={film.id}>
+            <Link to={`/films/${film.id}`}>{film.title}</Link>
+          </li>
         ))}
       </ul>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const Planet = () => {
   const { id } = useParams();
@@ -29,13 +29,17 @@ const Planet = () => {
       <h2>Films:</h2>
       <ul>
         {films.map(film => (
-          <li key={film._id}>{film.title}</li>
+          <li key={film._id}>
+            <Link to={`/films/${film.id}`}>{film.title}</Link>
+          </li>
         ))}
       </ul>
       <h2>Characters:</h2>
       <ul>
         {characters.map(character => (
-          <li key={character._id}>{character.name}</li>
+          <li key={character._id}>
+            <Link to={`/characters/${character.id}`}>{character.name}</Link>
+          </li>
         ))}
       </ul>
     </div>

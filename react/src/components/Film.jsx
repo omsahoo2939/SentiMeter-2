@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const Film = () => {
   const { id } = useParams();
@@ -21,21 +21,29 @@ const Film = () => {
       .then(data => setPlanets(data));
   }, [id]);
 
-  if (!film) return <div>Loading...</div>;
-
   return (
     <div>
       <h1>{film.title}</h1>
+      <p><strong>Episode:</strong> {film.episode_id}</p>
+      <p><strong>Director:</strong> {film.director}</p>
+      <p><strong>Producer:</strong> {film.producer}</p>
+      <p><strong>Release Date:</strong> {new Date(film.release_date).toDateString()}</p>
+      <h2>Opening Crawl:</h2>
+      <p>{film.opening_crawl}</p>
       <h2>Characters:</h2>
       <ul>
         {characters.map(character => (
-          <li key={character.id}>{character.name}</li>
+          <li key={character.id}>
+            <Link to={`/characters/${character.id}`}>{character.name}</Link>
+          </li>
         ))}
       </ul>
       <h2>Planets:</h2>
       <ul>
         {planets.map(planet => (
-          <li key={planet.id}>{planet.name}</li>
+          <li key={planet.id}>
+            <Link to={`/planets/${planet.id}`}>{planet.name}</Link>
+          </li>
         ))}
       </ul>
     </div>
