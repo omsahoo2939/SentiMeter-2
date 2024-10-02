@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import './Character.css';
+
 const Character = () => {
   const { id } = useParams();
   const [character, setCharacters] = useState(null);
   const [films, setFilms] = useState([]);
   const [planet, setPlanets] = useState(null);
-  const [darkTheme, setDarkTheme] = useState(true); // Theme state
-
-  const toggleTheme = () => setDarkTheme(!darkTheme); // Theme toggle function
-
+  const [darkTheme, setDarkTheme] = useState(true); 
+  const toggleTheme = () => setDarkTheme(!darkTheme);
   useEffect(() => {
     fetch(`http://localhost:3001/api/characters/${id}`)
       .then(response => response.json())
@@ -24,7 +22,7 @@ const Character = () => {
       .then(data => setPlanets(data));
   }, [id]);
 
-  // Inline styles for the themes
+  
   const darkThemeStyles = {
     backgroundColor: 'black',
     color: 'white',
@@ -32,8 +30,8 @@ const Character = () => {
     minHeight: '100vh',
     padding: '20px',
     textAlign: 'center',
-    position: 'relative', // For star animations
-    overflow: 'hidden',   // Prevents scrollbars for star animation
+    position: 'relative', 
+    overflow: 'hidden',   
   };
 
   const lightThemeStyles = {
@@ -53,16 +51,16 @@ const Character = () => {
     right: 0,
     bottom: 0,
     background: 'transparent',
-    boxShadow: '0 0 1px white, 2px 2px 1px white, 4px 4px 1px white, 6px 6px 1px white, 8px 8px 1px white', // Simulate stars
-    animation: 'star-animation 50s linear infinite', // Slow-moving stars
-    zIndex: 0, // To keep it behind content
+    boxShadow: '0 0 1px white, 2px 2px 1px white, 4px 4px 1px white, 6px 6px 1px white, 8px 8px 1px white',
+    animation: 'star-animation 50s linear infinite',
+    zIndex: 0, 
   };
 
   const titleStyles = {
     fontSize: '3rem',
     margin: '20px 0',
-    position: 'relative', // So text stays above stars
-    zIndex: 1, // Ensure the title stays above star animation
+    position: 'relative', 
+    zIndex: 1,
   };
 
   const darkTitleStyles = {
@@ -90,7 +88,7 @@ const Character = () => {
     transition: 'background-color 0.3s ease',
     marginBottom: '20px',
     position: 'relative',
-    zIndex: 1, // Ensure the button stays above star animation
+    zIndex: 1, 
   };
 
   const buttonHoverStyles = {
@@ -100,8 +98,8 @@ const Character = () => {
   const listStyles = {
     listStyle: 'none',
     padding: '0',
-    position: 'relative', // So list stays above stars
-    zIndex: 1, // Keep the list above star animation
+    position: 'relative', 
+    zIndex: 1, 
   };
 
   const listItemStyles = {
