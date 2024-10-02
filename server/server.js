@@ -83,6 +83,80 @@ app.get('/api/films/:id', async (req, res) => {
     }
 });
 
+app.get('/api/films/:id/characters', async (req, res) => {
+    const filmId = parseInt(req.params.id);
+
+    try {
+        const filmCharacters = await db.collection('films_characters').find({ film_id: filmId }).toArray();
+        const characterIds = filmCharacters.map(fc => fc.character_id);
+        const characters = await db.collection('characters').find({ id: { $in: characterIds } }).toArray();
+        console.log(filmCharacters);
+        res.json(characters);
+    } catch (error) {
+        console.error('Error fetching characters for film:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+
+app.get('/api/films/:id/planets', async (req, res) => {
+    const filmId = parseInt(req.params.id);
+
+    try {
+        const filmPlanets = await db.collection('films_planets').find({ film_id: filmId }).toArray();
+        const planetIds = filmPlanets.map(fc => fc.planet_id);
+        const planets = await db.collection('planets').find({ id: { $in: planetIds } }).toArray();
+        res.json(planets);
+    } catch (error) {
+        console.error('Error fetching characters for film:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+
+app.get('/api/characters/:id/films', async (req, res) => {
+    const characterId = parseInt(req.params.id);
+
+    try {
+        const characterFilms = await db.collection('films_characters').find({ character_id: characterId }).toArray();
+        const filmIds = characterFilms.map(fc => fc.film_id);
+        const films = await db.collection('films').find({ id: { $in: filmIds } }).toArray();
+        res.json(films);
+    } catch (error) {
+        console.error('Error fetching characters for film:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+
+app.get('/api/planets/:id/films', async (req, res) => {
+    const planetsId = parseInt(req.params.id);
+
+    try {
+        const planetsFilms = await db.collection('films_planets').find({ planet_id: planetsId }).toArray();
+        const filmIds = planetsFilms.map(fc => fc.film_id);
+        const films = await db.collection('films').find({ id: { $in: filmIds } }).toArray();
+        res.json(films);
+    } catch (error) {
+        console.error('Error fetching characters for film:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+
+app.get('/api/planets/:id/characters', async (req, res) => {
+    const planetsId = parseInt(req.params.id);
+    try {
+        const planetsCharacter = await db.collection('planets').find({ id: planetsId }).toArray();
+        const characterPlanet = planetsCharacter.map(fc => fc.id);
+        const characters = await db.collection('characters').find({ homeworld: { $in: characterPlanet } }).toArray();
+        res.json(characters);
+       
+    } catch (error) {
+        console.error('Error fetching characters for film:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
