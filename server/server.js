@@ -10,7 +10,7 @@ const mongoURI = 'mongodb://localhost:27017';
 const dbName = 'swapi';
 let db;
 
-MongoClient.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+MongoClient.connect(mongoURI)
     .then(client => {
         console.log('MongoDB connected');
         db = client.db(dbName);
