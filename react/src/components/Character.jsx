@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './Character.css'; 
 
 const Character = () => {
   const { id } = useParams();
@@ -8,6 +9,9 @@ const Character = () => {
   const [planet, setPlanet] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [darkTheme, setDarkTheme] = useState(true);
+
+  const toggleTheme = () => setDarkTheme(!darkTheme); 
 
   useEffect(() => {
     const fetchCharacterData = async () => {
@@ -47,12 +51,16 @@ const Character = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div>
-      <h1>{character?.name}</h1>
-      <p>Homeworld: {planet?.name}</p> 
-      
-      <h2>Films:</h2>
-      <ul>
+    <div className={darkTheme ? 'character-container dark-theme' : 'character-container light-theme'}>
+      <button onClick={toggleTheme} className="theme-toggle-btn">
+        {darkTheme ? 'Switch to Light/Planet Theme' : 'Switch to Dark/Space Theme'}
+      </button>
+
+      <h1 className="character-title">{character?.name}</h1>
+      <p className="character-detail">Homeworld: {planet?.name}</p>
+
+      <h2 className="films-title">Films:</h2>
+      <ul className="films-list">
         {films.map(film => (
           <li key={film._id}>{film.title}</li>
         ))}
