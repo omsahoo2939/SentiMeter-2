@@ -5,7 +5,7 @@ const Characters = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch('/api/characters')
+    fetch('http://localhost:3001/api/characters')
       .then(response => response.json())
       .then(data => setCharacters(data));
   }, []);

@@ -1,11 +1,12 @@
 import { MongoClient, ObjectId } from 'mongodb';
 import express from 'express';
+import cors from 'cors';
 
 const app = express();
-const port = 3101;
+const port = 3001;
 
+app.use(cors());
 app.use(express.json());
-
 const mongoURI = 'mongodb://localhost:27017';
 const dbName = 'swapi';
 let db;
@@ -122,6 +123,21 @@ app.get('/api/characters/:id/films', async (req, res) => {
         const filmIds = characterFilms.map(fc => fc.film_id);
         const films = await db.collection('films').find({ id: { $in: filmIds } }).toArray();
         res.json(films);
+    } catch (error) {
+        console.error('Error fetching characters for film:', error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+app.get('/api/characters/:id/planets', async (req, res) => {
+    const characterId = parseInt(req.params.id);
+
+    try {
+        const character = await db.collection('characters').findOne({ id: characterId });
+        const planet = await db.collection('planets').findOne({ id: character.homeworld });
+       
+        res.json(planet);
+
     } catch (error) {
         console.error('Error fetching characters for film:', error);
         res.status(500).json({ error: 'Internal Server Error' });
