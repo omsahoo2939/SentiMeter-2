@@ -8,7 +8,9 @@ const Home = () => {
       color: '#00FF00', 
       textAlign: 'center', 
       padding: '50px', 
-      fontFamily: 'Impact, sans-serif' 
+      fontFamily: 'Impact, sans-serif',
+      width: '100%',
+      height: '100vh' 
     }}>
       <nav style={{ marginBottom: '20px' }}>
         <Link to="/characters">
@@ -21,7 +23,7 @@ const Home = () => {
               border: '2px solid #00FF00', 
               borderRadius: '5px',
               cursor: 'pointer',
-              transition: 'background-color 0.3s ease'
+              transition: 'background-color 0.3s ease, color 0.3s ease' 
             }}
             onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#00FF00', e.currentTarget.style.color = '#000')} 
             onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#444', e.currentTarget.style.color = '#00FF00')}
@@ -40,7 +42,7 @@ const Home = () => {
               border: '2px solid #00FF00',
               borderRadius: '5px',
               cursor: 'pointer',
-              transition: 'background-color 0.3s ease'
+              transition: 'background-color 0.3s ease, color 0.3s ease' // Added transition for color
             }}
             onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#00FF00', e.currentTarget.style.color = '#000')}
             onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#444', e.currentTarget.style.color = '#00FF00')}
@@ -58,7 +60,7 @@ const Home = () => {
               border: '2px solid #00FF00',
               borderRadius: '5px',
               cursor: 'pointer',
-              transition: 'background-color 0.3s ease'
+              transition: 'background-color 0.3s ease, color 0.3s ease' // Added transition for color
             }}
             onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#00FF00', e.currentTarget.style.color = '#000')}
             onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#444', e.currentTarget.style.color = '#00FF00')}

@@ -7,16 +7,15 @@ import Planets from './components/Planets';
 import Planet from './components/Planet';
 import Films from './components/Films';
 import Film from './components/Film';
-import Loading from './components/Loading'; // Import the Loading component
-
+import Loading from './components/Loading';
 const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a data fetch
+ 
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the timeout as needed
+    }, 2500);
   }, []);
 
   if (loading) {
