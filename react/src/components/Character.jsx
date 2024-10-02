@@ -6,6 +6,9 @@ const Character = () => {
   const [character, setCharacters] = useState(null);
   const [films, setFilms] = useState([]);
   const [planet, setPlanets] = useState(null);
+  const [darkTheme, setDarkTheme] = useState(true); // Theme state
+
+  const toggleTheme = () => setDarkTheme(!darkTheme); // Theme toggle function
 
   useEffect(() => {
     fetch(`http://localhost:3001/api/characters/${id}`)
@@ -21,19 +24,116 @@ const Character = () => {
       .then(data => setPlanets(data));
   }, [id]);
 
+  // Inline styles for the themes
+  const darkThemeStyles = {
+    backgroundColor: 'black',
+    color: 'white',
+    background: 'radial-gradient(circle, #020024, #090979, #0f0c29)',
+    minHeight: '100vh',
+    padding: '20px',
+    textAlign: 'center',
+    position: 'relative', // For star animations
+    overflow: 'hidden',   // Prevents scrollbars for star animation
+  };
+
+  const lightThemeStyles = {
+    backgroundColor: '#f0f8ff',
+    color: 'black',
+    background: 'linear-gradient(to bottom, #fffcdc, #f0e5d8, #e2e8e6)',
+    minHeight: '100vh',
+    padding: '20px',
+    textAlign: 'center',
+  };
+
+  const starFieldStyles = {
+    content: '""',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: 'transparent',
+    boxShadow: '0 0 1px white, 2px 2px 1px white, 4px 4px 1px white, 6px 6px 1px white, 8px 8px 1px white', // Simulate stars
+    animation: 'star-animation 50s linear infinite', // Slow-moving stars
+    zIndex: 0, // To keep it behind content
+  };
+
+  const titleStyles = {
+    fontSize: '3rem',
+    margin: '20px 0',
+    position: 'relative', // So text stays above stars
+    zIndex: 1, // Ensure the title stays above star animation
+  };
+
+  const darkTitleStyles = {
+    color: '#00e1ff',
+    textShadow: '0 0 10px #00e1ff, 0 0 20px #00e1ff, 0 0 40px #00e1ff',
+  };
+
+  const lightTitleStyles = {
+    color: '#3e82fc',
+    textShadow: '0 0 8px #3e82fc, 0 0 15px #82a9fc',
+  };
+
+  const filmsTitleStyles = darkTheme
+    ? { color: '#ff4f4f', textShadow: '0 0 10px #ff4f4f, 0 0 20px #ff4f4f, 0 0 40px #ff4f4f' }
+    : { color: '#ffab4f', textShadow: '0 0 8px #ffab4f, 0 0 15px #ffdb82' };
+
+  const buttonStyles = {
+    backgroundColor: '#282c34',
+    color: 'white',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '1rem',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease',
+    marginBottom: '20px',
+    position: 'relative',
+    zIndex: 1, // Ensure the button stays above star animation
+  };
+
+  const buttonHoverStyles = {
+    backgroundColor: '#61dafb',
+  };
+
+  const listStyles = {
+    listStyle: 'none',
+    padding: '0',
+    position: 'relative', // So list stays above stars
+    zIndex: 1, // Keep the list above star animation
+  };
+
+  const listItemStyles = {
+    margin: '0.5rem 0',
+  };
+
   return (
-    <div>
-      <h1>{character?.name}</h1>
+    <div style={darkTheme ? darkThemeStyles : lightThemeStyles}>
+      <div style={darkTheme ? starFieldStyles : {}}></div>
+
+      <button
+        onClick={toggleTheme}
+        style={buttonStyles}
+        onMouseEnter={e => (e.target.style.backgroundColor = '#61dafb')}
+        onMouseLeave={e => (e.target.style.backgroundColor = '#282c34')}
+      >
+        {darkTheme ? 'Switch to Light/Planet Theme' : 'Switch to Dark/Space Theme'}
+      </button>
+
+      <h1 style={{ ...titleStyles, ...(darkTheme ? darkTitleStyles : lightTitleStyles) }}>
+        {character?.name}
+      </h1>
       <p>Height: {character?.height}</p>
       <p>Mass: {character?.mass}</p>
       <p>Born: {character?.birth_year}</p>
 
-      <p>Homeworld: {planet?.name}</p> 
-      
-      <h2>Films appeared in:</h2>
-      <ul>
+      <p>Homeworld: {planet?.name}</p>
+
+      <h2 style={filmsTitleStyles}>Films appeared in:</h2>
+      <ul style={listStyles}>
         {films.map(film => (
-          <li key={film.id}>
+          <li key={film.id} style={listItemStyles}>
             <Link to={`/films/${film.id}`}>{film.title}</Link>
           </li>
         ))}
