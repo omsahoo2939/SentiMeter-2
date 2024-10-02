@@ -1,43 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-
-const Container = styled.div`
-  background-color: #000;
-  color: #f0e68c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Star Jedi', sans-serif;
-  overflow: hidden;
-`;
-
-const Title = styled(motion.h1)`
-  font-size: 4rem;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  letter-spacing: 0.2rem;
-  text-shadow: 0 0 10px #f0e68c, 0 0 20px #f0e68c;
-`;
-
-const List = styled(motion.ul)`
-  list-style: none;
-  padding: 0;
-`;
-
-const ListItem = styled(motion.li)`
-  margin: 1rem 0;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #ffcc00;
-    text-shadow: 0 0 8px #ffcc00, 0 0 16px #ffcc00;
-  }
-`;
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
@@ -49,37 +11,97 @@ const Characters = () => {
   }, []);
 
   return (
-    <Container>
-      <Title
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        Characters
-      </Title>
-      <List
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
-        }}
-      >
+    <div style={styles.container}>
+      <h1 style={styles.title}>Characters</h1>
+      <ul style={styles.list}>
         {characters.map(character => (
-          <ListItem
-            key={character.id}
-            whileHover={{ scale: 1.1 }}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-          >
-            <Link to={`/characters/${character.id}`}>{character.name}</Link>
-          </ListItem>
+          <li key={character.id} style={styles.listItem}>
+            <Link to={`/characters/${character.id}`} style={styles.link}>
+              {character.name}
+            </Link>
+          </li>
         ))}
-      </List>
-    </Container>
+      </ul>
+      <style>
+        {`
+          body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #001f3f, #005f9f);
+            color: #ffffff;
+          }
+          h1 {
+            text-align: center;
+            text-shadow: 0 0 10px #fff, 0 0 20px #0ff;
+            margin-bottom: 40px;
+            font-size: 3rem;
+          }
+          .twinkling-stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: -1;
+            pointer-events: none;
+          }
+          .twinkling-stars::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            box-shadow: 
+              100px 150px #FFFFFF, 300px 80px #FFFFFF, 450px 300px #FFFFFF,
+              600px 200px #FFFFFF, 800px 100px #FFFFFF, 900px 400px #FFFFFF;
+            animation: twinkling 1.5s infinite alternate;
+          }
+          @keyframes twinkling {
+            0% {
+              opacity: 0.5;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+        `}
+      </style>
+      <div className="twinkling-stars"></div>
+    </div>
   );
+};
+
+const styles = {
+  container: {
+    padding: '20px',
+    position: 'relative',
+    minHeight: '100vh',
+    overflow: 'hidden',
+  },
+  title: {
+    fontSize: '3rem',
+    color: '#ffcc00',
+    textAlign: 'center',
+    marginBottom: '20px',
+    textShadow: '0 0 5px #fff, 0 0 10px #ffcc00',
+  },
+  list: {
+    listStyleType: 'none',
+    paddingLeft: '0',
+    textAlign: 'center',
+  },
+  listItem: {
+    marginBottom: '15px',
+    transition: 'transform 0.3s ease',
+  },
+  link: {
+    color: '#33CCFF',
+    fontSize: '1.5rem',
+    textDecoration: 'none',
+    textShadow: '0 0 5px #ffcc00',
+    transition: 'color 0.3s ease',
+  },
 };
 
 export default Characters;
