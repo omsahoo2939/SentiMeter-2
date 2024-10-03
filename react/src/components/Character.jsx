@@ -88,18 +88,14 @@ const Character = () => {
     transition: 'background-color 0.3s ease',
     marginBottom: '20px',
     position: 'relative',
-    zIndex: 1, 
-  };
-
-  const buttonHoverStyles = {
-    backgroundColor: '#61dafb',
+    zIndex: 1,
   };
 
   const listStyles = {
     listStyle: 'none',
     padding: '0',
-    position: 'relative', 
-    zIndex: 1, 
+    position: 'relative',
+    zIndex: 1,
   };
 
   const listItemStyles = {
@@ -125,14 +121,32 @@ const Character = () => {
       <p>Height: {character?.height}</p>
       <p>Mass: {character?.mass}</p>
       <p>Born: {character?.birth_year}</p>
-
       <p>Homeworld: {planet?.name}</p>
 
       <h2 style={filmsTitleStyles}>Films appeared in:</h2>
       <ul style={listStyles}>
         {films.map(film => (
           <li key={film.id} style={listItemStyles}>
-            <Link to={`/films/${film.id}`}>{film.title}</Link>
+            <Link
+              to={`/films/${film.id}`}
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#282c34',
+                color: 'white',
+                padding: '10px 20px',
+                border: 'none',
+                borderRadius: '5px',
+                textAlign: 'center',
+                textDecoration: 'none',
+                width: '100%',
+                cursor: 'pointer',
+                transition: 'background-color 0.3s ease',
+              }}
+              onMouseEnter={e => (e.target.style.backgroundColor = '#61dafb')}
+              onMouseLeave={e => (e.target.style.backgroundColor = '#282c34')}
+            >
+              {film.title}
+            </Link>
           </li>
         ))}
       </ul>
