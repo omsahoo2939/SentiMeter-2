@@ -22,34 +22,52 @@ function Login({ onLoginSuccess }) {
         setEmail('');
         setPassword('');
         
-        
         navigate('/home');
     };
 
     const styles = {
         container: {
             display: 'flex',
-            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            backgroundColor: '#f0f0f0',
+            background: 'linear-gradient(135deg, #6a11cb, #2575fc)', 
+            backgroundAttachment: 'fixed',
+            backgroundSize: 'cover',
+            position: 'relative',
+            overflow: 'hidden',
+        },
+        texture: {
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: 'url(https://www.transparenttextures.com/patterns/white-paper.png)', 
+            opacity: 0.1,
+            zIndex: 0,
         },
         title: {
             marginBottom: '20px',
             fontSize: '2rem',
+            color: 'white', 
+            textAlign: 'center',
+            zIndex: 1,
         },
         form: {
             display: 'flex',
             flexDirection: 'column',
             width: '300px',
-            background: 'white',
+            background: 'rgba(255, 255, 255, 0.9)', 
             padding: '20px',
-            borderRadius: '8px',
-            boxShadow: '0 0 10px rgba(0,0,0,0.1)',
+            borderRadius: '12px',
+            boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+            zIndex: 1,
         },
         label: {
             marginBottom: '10px',
+            fontWeight: 'bold',
+            color: '#333',
         },
         input: {
             padding: '10px',
@@ -59,22 +77,30 @@ function Login({ onLoginSuccess }) {
         },
         button: {
             padding: '10px',
-            backgroundColor: '#007bff',
+            backgroundColor: '#6a11cb', 
             color: 'white',
             border: 'none',
             borderRadius: '4px',
             cursor: 'pointer',
+            fontWeight: 'bold',
+            transition: 'background-color 0.3s ease',
+        },
+        buttonHover: {
+            backgroundColor: '#2575fc', 
         },
         error: {
             color: 'red',
+            textAlign: 'center',
         },
         success: {
             color: 'green',
+            textAlign: 'center',
         },
     };
 
     return (
         <div style={styles.container}>
+            <div style={styles.texture}></div>
             <h2 style={styles.title}>Login</h2>
             <form onSubmit={handleSubmit} style={styles.form}>
                 <label style={styles.label}>
@@ -97,7 +123,12 @@ function Login({ onLoginSuccess }) {
                         required 
                     />
                 </label>
-                <button type="submit" style={styles.button}>
+                <button 
+                    type="submit" 
+                    style={styles.button}
+                    onMouseOver={e => (e.currentTarget.style.backgroundColor = styles.buttonHover.backgroundColor)}
+                    onMouseOut={e => (e.currentTarget.style.backgroundColor = styles.button.backgroundColor)}
+                >
                     Login
                 </button>
                 {error && <p style={styles.error}>{error}</p>}
