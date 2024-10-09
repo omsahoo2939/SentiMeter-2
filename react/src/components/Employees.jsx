@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Planets = () => {
-  const [planets, setPlanets] = useState([]);
+const Employees = () => {
+  const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/planets')
+    fetch('http://localhost:3001/api/employees')
       .then(response => response.json())
-      .then(data => setPlanets(data));
+      .then(data => setEmployees(data));
   }, []);
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Planets</h1>
+      <h1 style={styles.title}>Employees</h1>
       <ul style={styles.list}>
-        {planets.map(planet => (
-          <li key={planet._id} style={styles.listItem}>
-            <Link to={`/planets/${planet.id}`} style={styles.link}>
-              {planet.name}
+        {employees.map(character => (
+          <li key={character.id} style={styles.listItem}>
+            <Link to={`/employees/${character.id}`} style={styles.link}>
+              {character.id}
             </Link>
           </li>
         ))}
@@ -27,12 +27,12 @@ const Planets = () => {
           body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+            background: linear-gradient(135deg, #001f3f, #005f9f);
             color: #ffffff;
           }
           h1 {
             text-align: center;
-            text-shadow: 0 0 10px #fff, 0 0 20px #f39c12;
+            text-shadow: 0 0 10px #fff, 0 0 20px #0ff;
             margin-bottom: 40px;
             font-size: 3rem;
           }
@@ -81,10 +81,10 @@ const styles = {
   },
   title: {
     fontSize: '3rem',
-    color: '#f39c12',
+    color: '#ffcc00',
     textAlign: 'center',
     marginBottom: '20px',
-    textShadow: '0 0 5px #fff, 0 0 10px #f39c12',
+    textShadow: '0 0 5px #fff, 0 0 10px #ffcc00',
   },
   list: {
     listStyleType: 'none',
@@ -96,12 +96,12 @@ const styles = {
     transition: 'transform 0.3s ease',
   },
   link: {
-    color: '#00ccff',
+    color: '#33CCFF',
     fontSize: '1.5rem',
     textDecoration: 'none',
-    textShadow: '0 0 5px #f39c12',
+    textShadow: '0 0 5px #ffcc00',
     transition: 'color 0.3s ease',
   },
 };
 
-export default Planets;
+export default Employees;
