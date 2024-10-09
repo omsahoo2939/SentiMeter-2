@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 
-function FeedbackForm() {
-    const [feedback, setFeedback] = useState('');
-    // const [question, setQuestion] = useState('');
+function QuestionForm() {
+    const [question, setQuestion] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         // Add the current timestamp
         const submission = {
-            feedback,
+            question,
             addedTimestamp: new Date().toISOString()
         };
 
         try {
             // TODO: Make a POST request to the API to add the sock
-            const response = await fetch(`http://localhost:3001/submitForm`, {
+            const response = await fetch(`http://localhost:3001/questionForm`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -37,23 +36,23 @@ function FeedbackForm() {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
+            {/* <label>
                 Feedback:
                 <textarea 
                     value={feedback} 
                     onChange={e => setFeedback(e.target.value)} 
                 />
-            </label>
-            {/* <label>
+            </label> */}
+            <label>
                 Question:
                 <textarea 
                     value={question} 
                     onChange={e => setQuestion(e.target.value)} 
                 />
-            </label> */}
+            </label>
             <button type="submit">Submit</button>
         </form>
     );
 }
 
-export default FeedbackForm;
+export default QuestionForm;
