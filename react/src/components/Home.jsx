@@ -9,6 +9,9 @@ const Home = () => {
         <Link to="/feedbackForm">
           <button className="nav-button">Give Feedback</button>
         </Link>
+        <Link to="/questionForm">
+          <button className="nav-button">Ask Questions</button>
+        </Link>
         <Link to="/employees">
           <button className="nav-button">Check Feedback</button>
         </Link>
