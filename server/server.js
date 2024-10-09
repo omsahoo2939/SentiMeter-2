@@ -36,14 +36,18 @@ app.get('/api/feedbacks', async (req, res) => {
     }
 });
 
-// app.get('/api/submitForm', async (req, res) => {
-//     try {
-//         const employees = await db.collection('employees').find().toArray();
-//         res.json(employees);
-//     } catch (err) {
-//         res.status(500).json({ error: err.message });
-//     }
-// });
+app.post('/submitForm', async (req, res) => {
+    try {
+        const feedback  = req.body;
+        const client = await MongoClient.connect(mongoURI);
+        const db = client.db(dbName);
+        const collection = db.collection(feedbacks);
+        const result = await collection.insertOne(feedback);
+        res.status(201).send(`{"_id":"${result.insertedId}"}`);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
 
 
 app.listen(port, () => {

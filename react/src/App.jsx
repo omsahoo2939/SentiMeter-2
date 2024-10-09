@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import FeedbackForm from './components/FeedbackForm';
 import Employees from './components/Employees';
+import AddSock from './components/AddSock'
 
 import Loading from './components/Loading';
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/feedbackForm" element={<FeedbackForm />} />
           <Route path="/employees" element={<Employees />} />
           {/* <Route path="/characters/:id" element={<Character />} /> */}
+          <Route path="/add" element={<AddSock /> } />
 
         </Routes>
       </div>

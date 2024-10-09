@@ -2,13 +2,37 @@ import React, { useState } from 'react';
 
 function FeedbackForm() {
     const [feedback, setFeedback] = useState('');
-    const [question, setQuestion] = useState('');
+    // const [question, setQuestion] = useState('');
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        alert(`Feedback submitted: ${feedback}\nQuestion submitted: ${question}`);
-        setFeedback('');
-        setQuestion('');
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        // Add the current timestamp
+        const submission = {
+            ...feedback,
+            addedTimestamp: new Date().toISOString()
+        };
+
+        try {
+            // TODO: Make a POST request to the API to add the sock
+            const response = await fetch(`http://localhost:3000/socks`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(submission),
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log(data);
+            // Handle post submission logic (like showing a success message)
+        } catch (error) {
+            console.error("Error posting data", error);
+            // Handle errors here
+        }
     };
 
     return (
@@ -20,13 +44,13 @@ function FeedbackForm() {
                     onChange={e => setFeedback(e.target.value)} 
                 />
             </label>
-            <label>
+            {/* <label>
                 Question:
                 <textarea 
                     value={question} 
                     onChange={e => setQuestion(e.target.value)} 
                 />
-            </label>
+            </label> */}
             <button type="submit">Submit</button>
         </form>
     );
