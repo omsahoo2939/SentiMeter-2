@@ -1,37 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home';
-import FeedbackForm from './components/FeedbackForm';
-import Employees from './components/Employees';
+import Login from './components/Login'; 
+import FeedbackForm from './components/FeedbackForm'; 
+import Employees from './components/Employees'; 
 
-import Loading from './components/Loading';
 const App = () => {
-  const [loading, setLoading] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
- 
-    setTimeout(() => {
-      setLoading(false);
-    }, 2500);
-  }, []);
+    const handleLoginSuccess = () => {
+        setIsLoggedIn(true);
+    };
 
-  // if (loading) {
-  //   return <Loading />;
-  // }
-
-  return (
-    <Router>
-      <div>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/feedbackForm" element={<FeedbackForm />} />
-          <Route path="/employees" element={<Employees />} />
-          {/* <Route path="/characters/:id" element={<Character />} /> */}
-
-        </Routes>
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/login" element={<Login onLoginSuccess={handleLoginSuccess} />} />
+                <Route path="/home" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
+                <Route path="/feedbackForm" element={isLoggedIn ? <FeedbackForm /> : <Navigate to="/login" />} />
+                <Route path="/employees" element={isLoggedIn ? <Employees /> : <Navigate to="/login" />} />
+                <Route path="*" element={<Navigate to="/login" />} />
+            </Routes>
+        </Router>
+    );
 };
 
 export default App;
