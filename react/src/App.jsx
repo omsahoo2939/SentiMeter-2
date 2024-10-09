@@ -15,16 +15,16 @@ const App = () => {
     }, 2500);
   }, []);
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   return (
     <Router>
       <div>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/form" element={<FeedbackForm />} />
+          <Route path="/feedbackForm" element={<FeedbackForm />} />
           <Route path="/employees" element={<Employees />} />
           {/* <Route path="/characters/:id" element={<Character />} /> */}
 

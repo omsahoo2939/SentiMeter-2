@@ -6,18 +6,15 @@ const Home = () => {
   return (
     <div className="home-container">
       <nav className="nav-bar">
-        <Link to="/characters">
-          <button className="nav-button">Characters</button>
+        <Link to="/feedbackForm">
+          <button className="nav-button">Give Feedback</button>
         </Link>
-        <Link to="/planets">
-          <button className="nav-button">Planets</button>
-        </Link>
-        <Link to="/films">
-          <button className="nav-button">Films</button>
+        <Link to="/employees">
+          <button className="nav-button">Check Feedback</button>
         </Link>
       </nav>
-      <h1 className="main-title">Welcome to the Star Wars Database</h1>
-      <p className="sub-title">Select a category from the navigation bar to explore more.</p>
+      <h1 className="main-title">Welcome to SentiMeter</h1>
+      <p className="sub-title">Gain meaningful insights through the power of sentiment analysis</p>
     </div>
   );
 };
