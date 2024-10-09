@@ -27,6 +27,15 @@ app.get('/api/employees', async (req, res) => {
     }
 });
 
+app.get('/api/feedbacks', async (req, res) => {
+    try {
+        const feedbacks = await db.collection('feedbacks').find().toArray();
+        res.json(feedbacks);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 // app.get('/api/submitForm', async (req, res) => {
 //     try {
 //         const employees = await db.collection('employees').find().toArray();
