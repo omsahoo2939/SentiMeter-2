@@ -29,9 +29,9 @@ const App = () => {
             <Routes>
                 <Route path="/login" element={<Login onLoginSuccess={handleLoginSuccess} />} />
                 {userEmail}
-                <Route path="/home" element={isLoggedIn ? <Home email={userEmail}/> : <Navigate to="/login" />} />
-                <Route path="/feedbackForm" element={isLoggedIn && userReportsTo!=-1 ? <FeedbackForm id={userId}/> : <Navigate to="/login" />} />
-                <Route path="/questionForm" element={isLoggedIn && userReportsTo!=-1 ? <QuestionForm id={userId}/> : <Navigate to="/login" />} />
+                <Route path="/home" element={isLoggedIn ? <Home email={userEmail} reportsTo={userReportsTo} directReports={userDirectReports}/> : <Navigate to="/login" />} />
+                <Route path="/feedbackForm" element={isLoggedIn ? <FeedbackForm id={userId}/> : <Navigate to="/login" />} />
+                <Route path="/questionForm" element={isLoggedIn ? <QuestionForm id={userId}/> : <Navigate to="/login" />} />
                 <Route path="/checkFeedback" element={isLoggedIn ? <CheckFeedback directReports={userDirectReports}/> : <Navigate to="/login" />} />
                 <Route path="*" element={<Navigate to="/login" />} />
                 {/* <Route path="/add" element={<AddSock /> } /> */}
