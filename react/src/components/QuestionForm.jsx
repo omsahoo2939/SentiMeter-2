@@ -119,7 +119,7 @@ const QuestionForm = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add the current timestamp
+ 
     const submission = {
         topic,
         question,
@@ -129,7 +129,7 @@ const QuestionForm = (props) => {
     setIsSubmitted(true);
 
     try {
-        // TODO: Make a POST request to the API to add the sock
+  
         const response = await fetch(`http://localhost:3001/questionForm`, {
             method: "POST",
             headers: {
@@ -144,10 +144,10 @@ const QuestionForm = (props) => {
 
         const data = await response.json();
         console.log(data);
-        // Handle post submission logic (like showing a success message)
+
     } catch (error) {
         console.error("Error posting data", error);
-        // Handle errors here
+  
     }
 };
 
