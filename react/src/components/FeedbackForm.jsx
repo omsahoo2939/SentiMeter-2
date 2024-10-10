@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useHistory } from 'react-router-dom';
+import SubmittedPageFeedback from 'SubmittedPageFeedback';
 
 const FormContainer = styled.div`
   display: flex;
@@ -88,6 +90,7 @@ const FeedbackForm = (props) => {
     const [satisfactionManager, setSatisfactionManager] = useState('');
     const [satisfactionTeam, setSatisfactionTeam] = useState('');
     const [sentimentResult, setSentimentResult] = useState('');
+    const [submitted, setSubmitted] = useState(false);
     const submittedBy = props.id;
 
     const handleSubmit = async (e) => {
@@ -102,7 +105,6 @@ const FeedbackForm = (props) => {
         };
 
         try {
-            // Send feedback to your API (adjust URL if needed)
             const response = await fetch(`http://localhost:3001/submitForm`, {
                 method: "POST",
                 headers: {
@@ -115,7 +117,6 @@ const FeedbackForm = (props) => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            // Analyze sentiment
             const sentimentResponse = await fetch(`http://127.0.0.1:5000/analyzeSentiment`, {
                 method: "POST",
                 headers: {
@@ -131,16 +132,18 @@ const FeedbackForm = (props) => {
             const sentimentData = await sentimentResponse.json();
             setSentimentResult(sentimentData.sentiment);
 
-            // Reset form fields
             setFeedback('');
             setSatisfactionManager('');
             setSatisfactionTeam('');
-
+            setSubmitted(true);
         } catch (error) {
             console.error("Error posting data", error);
-            // Handle errors here
         }
     };
+
+    if (submitted) {
+        return <SubmittedPageFeedback />;
+    }
 
     return (
         <FormContainer>
@@ -174,9 +177,7 @@ const FeedbackForm = (props) => {
                     <TextArea id="feedback" value={feedback} onChange={e => setFeedback(e.target.value)} required />
                 </FormGroup>
 
-                <Button type="submit">Submit</Button>
-
-                {sentimentResult && <p>Sentiment: {sentimentResult}</p>}
+                <Button type="submit">Submit Feedback</Button>
             </Form>
         </FormContainer>
     );

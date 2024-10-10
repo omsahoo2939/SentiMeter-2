@@ -4,6 +4,8 @@ import Home from './components/Home';
 import FeedbackForm from './components/FeedbackForm';
 import QuestionForm from './components/QuestionForm';
 import CheckFeedback from './components/CheckFeedback';
+import SubmittedPageFeedback from './components/SubmittedPageFeedback';
+
 import Login from './components/Login'; 
 
 const App = () => {
