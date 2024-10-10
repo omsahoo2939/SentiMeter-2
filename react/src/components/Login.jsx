@@ -31,7 +31,7 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #6a11cb, #2575fc)', 
+            background: 'linear-gradient(135deg, #6a85b6, #bac8e0)', 
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
@@ -50,7 +50,7 @@ function Login({ onLoginSuccess }) {
         title: {
             marginBottom: '20px',
             fontSize: '2rem',
-            color: 'white', 
+            color: '#f5f5f5', 
             textAlign: 'center',
             zIndex: 1,
         },
@@ -58,7 +58,7 @@ function Login({ onLoginSuccess }) {
             display: 'flex',
             flexDirection: 'column',
             width: '300px',
-            background: 'rgba(255, 255, 255, 0.9)', 
+            background: 'rgba(255, 255, 255, 0.1)', 
             padding: '20px',
             borderRadius: '12px',
             boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
@@ -67,17 +67,18 @@ function Login({ onLoginSuccess }) {
         label: {
             marginBottom: '10px',
             fontWeight: 'bold',
-            color: '#333',
+            color: 'rgba(255, 255, 255, 0.7)', 
         },
         input: {
             padding: '10px',
             marginBottom: '15px',
-            border: '1px solid #ccc',
+            border: '1px solid rgba(255, 255, 255, 0.3)', 
             borderRadius: '4px',
+            background: 'rgba(255, 255, 255, 0.9)', 
         },
         button: {
             padding: '10px',
-            backgroundColor: '#6a11cb', 
+            backgroundColor: 'linear-gradient(135deg, #4c5c68, #88c0d0)', 
             color: 'white',
             border: 'none',
             borderRadius: '4px',
@@ -86,7 +87,7 @@ function Login({ onLoginSuccess }) {
             transition: 'background-color 0.3s ease',
         },
         buttonHover: {
-            backgroundColor: '#2575fc', 
+            backgroundColor: 'linear-gradient(135deg, #88c0d0, #4c5c68)', 
         },
         error: {
             color: 'red',
