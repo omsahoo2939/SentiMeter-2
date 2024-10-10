@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Employees = () => {
+const CheckFeedback = (props) => {
   const [feedbacks, setFeedbacks] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3001/api/feedbacks')
       .then(response => response.json())
-      .then(data => setFeedbacks(data));
+      .then(data => setFeedbacks(data.filter(x=>props.directReports.includes(x.submittedBy))));
   }, []);
 
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>Your Feedback</h1>
       <ul style={styles.list}>
-        {feedbacks.map(feedback => (
+        {feedbacks.map(feedback =>(
           <div key={feedback.id} style={styles.listItem}>
             <Link to={`/feedback/${feedback.id}`} style={styles.link}>
               {feedback.satisfactionManager}
@@ -105,4 +105,4 @@ const styles = {
   },
 };
 
-export default Employees;
+export default CheckFeedback;

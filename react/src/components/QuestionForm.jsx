@@ -111,10 +111,11 @@ const Button = styled.button`
   }
 `;
 
-const QuestionForm = () => {
+const QuestionForm = (props) => {
   const [topic, setTopic] = useState('');
   const [question, setQuestion] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false); 
+  const submittedBy = props.id;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -122,6 +123,7 @@ const QuestionForm = () => {
     const submission = {
         topic,
         question,
+        submittedBy,
         addedTimestamp: new Date().toISOString()
     };
     setIsSubmitted(true);

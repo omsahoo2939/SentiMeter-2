@@ -12,12 +12,12 @@ const Home = (props) => {
         <Link to="/questionForm">
           <button className="nav-button">Ask Questions</button>
         </Link>
-        <Link to="/employees">
+        <Link to="/checkFeedback">
           <button className="nav-button">Check Feedback</button>
         </Link>
       </nav>
       <h1 className="main-title">Welcome to SentiMeter</h1>
-      <div>{props.data}</div>
+      <div>{props.email}</div>
       <p className="sub-title">Gain meaningful insights through the power of sentiment analysis</p>
     </div>
   );

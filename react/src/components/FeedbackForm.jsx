@@ -83,11 +83,12 @@ const Button = styled.button`
   }
 `;
 
-const FeedbackForm = () => {
+const FeedbackForm = (props) => {
     const [feedback, setFeedback] = useState('');
     const [satisfactionManager, setSatisfactionManager] = useState('');
     const [satisfactionTeam, setSatisfactionTeam] = useState('');
     const [sentimentResult, setSentimentResult] = useState('');
+    const submittedBy = props.id;
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -96,6 +97,7 @@ const FeedbackForm = () => {
             feedback,
             satisfactionManager,
             satisfactionTeam,
+            submittedBy,
             addedTimestamp: new Date().toISOString()
         };
 
