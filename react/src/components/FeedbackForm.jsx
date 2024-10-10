@@ -95,16 +95,31 @@ const FeedbackForm = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const submission = {
-            feedback,
-            satisfactionManager,
-            satisfactionTeam,
-            submittedBy,
-            addedTimestamp: new Date().toISOString()
-        };
-        setIsSubmitted(true);
 
         try {
+          const sentimentResponse = await fetch(`http://127.0.0.1:5000/analyzeSentiment`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ "feedback": feedback }),
+        });
+
+        if (!sentimentResponse.ok) {
+            throw new Error(`HTTP error! status: ${sentimentResponse.status}`);
+          }
+
+            const sentimentData = await sentimentResponse.json();
+            setSentimentResult(sentimentData.sentiment);
+            const submission = {
+              feedback,
+              satisfactionManager,
+              satisfactionTeam,
+              submittedBy,
+              sentimentResult,
+              addedTimestamp: new Date().toISOString()
+          };
+          setIsSubmitted(true);
             const response = await fetch(`http://localhost:3001/submitForm`, {
                 method: "POST",
                 headers: {
@@ -117,20 +132,7 @@ const FeedbackForm = (props) => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            const sentimentResponse = await fetch(`http://127.0.0.1:5000/analyzeSentiment`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ "feedback": feedback }),
-            });
 
-            if (!sentimentResponse.ok) {
-                throw new Error(`HTTP error! status: ${sentimentResponse.status}`);
-            }
-
-            const sentimentData = await sentimentResponse.json();
-            setSentimentResult(sentimentData.sentiment);
 
             setFeedback('');
             setSatisfactionManager('');
