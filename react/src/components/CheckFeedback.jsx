@@ -21,8 +21,10 @@ const CheckFeedback = (props) => {
         {feedbacks.map(feedback => (
           <li key={feedback.id} style={styles.listItem}>
             <Link to={`/feedback/${feedback.id}`} style={styles.link}>
-              {feedback.satisfactionManager}
+              Manager Satisfaction: {feedback.satisfactionManager}
             </Link>
+            <p style={styles.feedbackText}>Sentiment: {feedback.sentimentResult}</p>
+            <p style={styles.feedbackText}>Team Satisfaciton: {feedback.satisfactionTeam}</p>
             <p style={styles.feedbackText}>{feedback.feedback}</p>
           </li>
         ))}
