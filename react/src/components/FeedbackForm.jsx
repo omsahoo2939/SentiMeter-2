@@ -88,7 +88,6 @@ const FeedbackForm = (props) => {
     const [feedback, setFeedback] = useState('');
     const [satisfactionManager, setSatisfactionManager] = useState('');
     const [satisfactionTeam, setSatisfactionTeam] = useState('');
-    const [sentimentResult, setSentimentResult] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false); 
     const submittedBy = props.id;
 
@@ -109,9 +108,9 @@ const FeedbackForm = (props) => {
             throw new Error(`HTTP error! status: ${sentimentResponse.status}`);
           }
 
-            const sentimentData = await sentimentResponse.json();
-            setSentimentResult(sentimentData.sentiment);
-            const submission = {
+        const sentimentData = await sentimentResponse.json();
+        let sentimentResult = sentimentData.sentiment
+        const submission = {
               feedback,
               satisfactionManager,
               satisfactionTeam,
