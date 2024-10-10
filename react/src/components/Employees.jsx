@@ -17,8 +17,9 @@ const Employees = () => {
         {feedbacks.map(feedback => (
           <div key={feedback.id} style={styles.listItem}>
             <Link to={`/feedback/${feedback.id}`} style={styles.link}>
-              {feedback.feedback}
+              {feedback.satisfactionManager}
             </Link>
+            {feedback.feedback}
           </div>
         ))}
       </ul>

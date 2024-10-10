@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Import the CSS file
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="home-container">
       <nav className="nav-bar">
@@ -17,6 +17,7 @@ const Home = () => {
         </Link>
       </nav>
       <h1 className="main-title">Welcome to SentiMeter</h1>
+      <div>{props.data}</div>
       <p className="sub-title">Gain meaningful insights through the power of sentiment analysis</p>
     </div>
   );

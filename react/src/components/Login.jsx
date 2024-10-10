@@ -16,7 +16,7 @@ function Login({ onLoginSuccess }) {
             setSuccess(false);
             return;
         }
-        onLoginSuccess();
+        onLoginSuccess(email);
         setSuccess(true);
         setError('');
         setEmail('');
