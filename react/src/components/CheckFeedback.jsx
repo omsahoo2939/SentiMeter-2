@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom';
 
 const CheckFeedback = (props) => {
   const [feedbacks, setFeedbacks] = useState([]);
+  const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3001/api/feedbacks')
       .then(response => response.json())
       .then(data => setFeedbacks(data.filter(x => props.directReports.includes(x.submittedBy))));
-  }, []);
+      fetch('http://localhost:3001/api/questions')
+      .then(response => response.json())
+      .then(data => setQuestions(data.filter(x => props.directReports.includes(x.submittedBy))));
+    }, []);
 
   return (
     <div style={styles.container}>
@@ -20,6 +24,17 @@ const CheckFeedback = (props) => {
               {feedback.satisfactionManager}
             </Link>
             <p style={styles.feedbackText}>{feedback.feedback}</p>
+          </li>
+        ))}
+      </ul>
+      <h1 style={styles.title}>Your Questions</h1>
+      <ul style={styles.list}>
+        {questions.map(question => (
+          <li key={question.id} style={styles.listItem}>
+            <Link to={`/question/${question.id}`} style={styles.link}>
+              {question.question}
+            </Link>
+            <p style={styles.feedbackText}>{question.question}</p>
           </li>
         ))}
       </ul>

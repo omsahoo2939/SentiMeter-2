@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import SubmittedPageFeedback from 'SubmittedPageFeedback';
+import SubmittedPage from './SubmittedPageFeedback.jsx';
 
 const FormContainer = styled.div`
   display: flex;
