@@ -53,10 +53,10 @@ const styles = {
   },
   title: {
     fontSize: '3rem',
-    color: '#ffcc00',
+    color: '#FFFFFF',
     textAlign: 'center',
     marginBottom: '20px',
-    textShadow: '0 0 5px #fff, 0 0 10px #ffcc00',
+    
   },
   list: {
     listStyleType: 'none',
@@ -72,7 +72,7 @@ const styles = {
     boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
   },
   link: {
-    color: '#33CCFF',
+    color: '#FFFFFF',
     fontSize: '1.5rem',
     textDecoration: 'none',
     textShadow: '0 0 5px #ffcc00',
