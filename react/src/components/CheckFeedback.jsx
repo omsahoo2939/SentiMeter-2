@@ -75,7 +75,6 @@ const styles = {
     color: '#FFFFFF',
     fontSize: '1.5rem',
     textDecoration: 'none',
-    textShadow: '0 0 5px #ffcc00',
     transition: 'color 0.3s ease',
   },
   feedbackText: {
