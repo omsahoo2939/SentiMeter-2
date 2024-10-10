@@ -7,67 +7,22 @@ const CheckFeedback = (props) => {
   useEffect(() => {
     fetch('http://localhost:3001/api/feedbacks')
       .then(response => response.json())
-      .then(data => setFeedbacks(data.filter(x=>props.directReports.includes(x.submittedBy))));
+      .then(data => setFeedbacks(data.filter(x => props.directReports.includes(x.submittedBy))));
   }, []);
 
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>Your Feedback</h1>
       <ul style={styles.list}>
-        {feedbacks.map(feedback =>(
-          <div key={feedback.id} style={styles.listItem}>
+        {feedbacks.map(feedback => (
+          <li key={feedback.id} style={styles.listItem}>
             <Link to={`/feedback/${feedback.id}`} style={styles.link}>
               {feedback.satisfactionManager}
             </Link>
-            {feedback.feedback}
-          </div>
+            <p style={styles.feedbackText}>{feedback.feedback}</p>
+          </li>
         ))}
       </ul>
-      <style>
-        {`
-          body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #001f3f, #005f9f);
-            color: #ffffff;
-          }
-          h1 {
-            text-align: center;
-            text-shadow: 0 0 10px #fff, 0 0 20px #0ff;
-            margin-bottom: 40px;
-            font-size: 3rem;
-          }
-          .twinkling-stars {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            z-index: -1;
-            pointer-events: none;
-          }
-          .twinkling-stars::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            box-shadow: 
-              100px 150px #FFFFFF, 300px 80px #FFFFFF, 450px 300px #FFFFFF,
-              600px 200px #FFFFFF, 800px 100px #FFFFFF, 900px 400px #FFFFFF;
-            animation: twinkling 1.5s infinite alternate;
-          }
-          @keyframes twinkling {
-            0% {
-              opacity: 0.5;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
-        `}
-      </style>
       <div className="twinkling-stars"></div>
     </div>
   );
@@ -79,6 +34,8 @@ const styles = {
     position: 'relative',
     minHeight: '100vh',
     overflow: 'hidden',
+    background: 'linear-gradient(135deg, #6a85b6, #bac8e0)',
+    color: '#fff',
   },
   title: {
     fontSize: '3rem',
@@ -95,6 +52,10 @@ const styles = {
   listItem: {
     marginBottom: '15px',
     transition: 'transform 0.3s ease',
+    background: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: '8px',
+    padding: '15px',
+    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
   },
   link: {
     color: '#33CCFF',
@@ -102,6 +63,10 @@ const styles = {
     textDecoration: 'none',
     textShadow: '0 0 5px #ffcc00',
     transition: 'color 0.3s ease',
+  },
+  feedbackText: {
+    color: '#fff',
+    marginTop: '5px',
   },
 };
 
