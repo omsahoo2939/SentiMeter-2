@@ -16,12 +16,14 @@ def analyze_sentiment():
 
     feedback_vectorized = preprocess_feedback(feedback)
 
+
     sentiment = model.predict(feedback_vectorized)
+    sentiment_label = sentiment[0]
     print("inside function")
     print(type(feedback_vectorized))
     print(sentiment)
     sys.stdout.flush()
-    return jsonify({'sentiment': sentiment})
+    return jsonify({'sentiment': sentiment_label})
 
 def preprocess_feedback(feedback):
     feedback_vectorized = vectorizer.transform([feedback])
