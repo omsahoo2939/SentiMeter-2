@@ -116,6 +116,39 @@ const QuestionForm = () => {
   const [question, setQuestion] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false); 
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // Add the current timestamp
+    const submission = {
+        topic,
+        question,
+        addedTimestamp: new Date().toISOString()
+    };
+    setIsSubmitted(true);
+
+    try {
+        // TODO: Make a POST request to the API to add the sock
+        const response = await fetch(`http://localhost:3001/questionForm`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(submission),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(data);
+        // Handle post submission logic (like showing a success message)
+    } catch (error) {
+        console.error("Error posting data", error);
+        // Handle errors here
+    }
+};
+
   const topics = [
     'Work Environment',
     'Project',
@@ -125,13 +158,13 @@ const QuestionForm = () => {
     'Other'
   ];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Topic:', topic);
-    console.log('Question:', question);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('Topic:', topic);
+  //   console.log('Question:', question);
 
-    setIsSubmitted(true); 
-  };
+  //   setIsSubmitted(true); 
+  // };
 
   
   if (isSubmitted) {

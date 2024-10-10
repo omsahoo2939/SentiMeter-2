@@ -2,24 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Employees = () => {
-  const [employees, setEmployees] = useState([]);
+  const [feedbacks, setFeedbacks] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/employees')
+    fetch('http://localhost:3001/api/feedbacks')
       .then(response => response.json())
-      .then(data => setEmployees(data));
+      .then(data => setFeedbacks(data));
   }, []);
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Employees</h1>
+      <h1 style={styles.title}>Your Feedback</h1>
       <ul style={styles.list}>
-        {employees.map(character => (
-          <li key={character.id} style={styles.listItem}>
-            <Link to={`/employees/${character.id}`} style={styles.link}>
-              {character.id}
+        {feedbacks.map(feedback => (
+          <div key={feedback.id} style={styles.listItem}>
+            <Link to={`/feedback/${feedback.id}`} style={styles.link}>
+              {feedback.satisfactionManager}
             </Link>
-          </li>
+            {feedback.feedback}
+          </div>
         ))}
       </ul>
       <style>

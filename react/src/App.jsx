@@ -8,16 +8,22 @@ import Login from './components/Login';
 
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-    const handleLoginSuccess = () => {
-        setIsLoggedIn(true);
+    const [userEmail, setUserEmail] = useState('');
+// user setuser pass down setuser
+    const handleLoginSuccess = (email) => {
+      setUserEmail(email)
+      setIsLoggedIn(true);
     };
+    // const handleLoginSuccess = () => {
+    //     setIsLoggedIn(true);
+    // };
 
     return (
         <Router>
             <Routes>
                 <Route path="/login" element={<Login onLoginSuccess={handleLoginSuccess} />} />
-                <Route path="/home" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />
+                {userEmail}
+                <Route path="/home" element={isLoggedIn ? <Home data={userEmail}/> : <Navigate to="/login" />} />
                 <Route path="/feedbackForm" element={isLoggedIn ? <FeedbackForm /> : <Navigate to="/login" />} />
                 <Route path="/questionForm" element={isLoggedIn ? <QuestionForm /> : <Navigate to="/login" />} />
                 <Route path="/employees" element={isLoggedIn ? <Employees /> : <Navigate to="/login" />} />
