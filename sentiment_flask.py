@@ -15,6 +15,7 @@ def analyze_sentiment():
     feedback_vectorized = preprocess_feedback(feedback)
 
     sentiment = model.predict([feedback_vectorized])[0] 
+    print(feedback_vectorized)
 
     return jsonify({'sentiment': sentiment})
 
