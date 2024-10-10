@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .home-container {
-  background: linear-gradient(135deg, #a29bfe, #74b9ff);
+  background: linear-gradient(135deg, #6a85b6, #bac8e0);
   color: #fff;
   text-align: center;
   padding: 50px;
@@ -12,6 +12,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: gradientBG 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .nav-bar {
@@ -21,9 +29,9 @@
 .nav-button {
   margin: 0 10px;
   padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #f5f5f5;
+  border: 2px solid rgba(255, 255, 255, 0.2); 
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -32,13 +40,13 @@
 }
 
 .nav-button:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3); 
   color: #000;
 }
 
 .main-title {
   font-size: 3em;
-  color: #fff;
+  color: #f5f5f5; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin: 20px 0;
 }

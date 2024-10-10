@@ -1,0 +1,4002 @@
+[
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The project is really interesting.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The company\u2019s mission aligns with my personal values.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The perks, like free lunches and events, are awesome.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel empowered to share my ideas.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel motivated to come to work every day.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The flexible work hours are amazing.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I enjoy working with my colleagues.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I appreciate the team's collaboration.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The training and development opportunities are great.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel valued by my team.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I'm learning a lot from my manager.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the positive company culture.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "This company truly cares about its employees.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The office space is fantastic.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I love the work environment here.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I feel like my contributions are recognized.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "I\u2019m growing professionally in this role.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The benefits package is great!",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The team spirit is exceptional.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The leadership team is supportive.",
+        "sentiment": "positive"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There is a lack of career growth opportunities.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don\u2019t feel valued for my hard work.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "This project is too stressful.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I\u2019m unhappy with the way conflicts are handled.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The management doesn\u2019t listen to feedback.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The team morale is very low.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like the company doesn\u2019t care about employees.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The work-life balance is terrible.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no room for innovation here.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The tools and technology we use are outdated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There are too many unrealistic deadlines.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "There\u2019s no clear direction from leadership.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The benefits are lacking.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel like I'm not growing in this role.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I don't feel supported by my team.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The workload is too much.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "I feel overworked and underappreciated.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The office environment is toxic.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The salary is not competitive.",
+        "sentiment": "negative"
+    },
+    {
+        "feedback": "The company's communication is poor.",
+        "sentiment": "negative"
+    }
+]
