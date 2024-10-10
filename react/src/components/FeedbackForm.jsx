@@ -121,7 +121,7 @@ const FeedbackForm = (props) => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ feedback }),
+                body: JSON.stringify({ "feedback": feedback }),
             });
 
             if (!sentimentResponse.ok) {
