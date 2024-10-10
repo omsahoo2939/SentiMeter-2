@@ -53,6 +53,10 @@ function Login({ onLoginSuccess }) {
             color: '#f5f5f5', 
             textAlign: 'center',
             zIndex: 1,
+            position: 'absolute',
+            top: '30%', 
+            left: '50%',
+            transform: 'translateX(-50%)',
         },
         form: {
             display: 'flex',
@@ -63,6 +67,7 @@ function Login({ onLoginSuccess }) {
             borderRadius: '12px',
             boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
             zIndex: 1,
+            marginTop: '60px', 
         },
         label: {
             marginBottom: '10px',
@@ -78,16 +83,17 @@ function Login({ onLoginSuccess }) {
         },
         button: {
             padding: '10px',
-            backgroundColor: 'linear-gradient(135deg, #4c5c68, #88c0d0)', 
+            backgroundColor: 'rgba(100, 100, 100, 0.7)', 
             color: 'white',
             border: 'none',
             borderRadius: '4px',
             cursor: 'pointer',
             fontWeight: 'bold',
             transition: 'background-color 0.3s ease',
+            textAlign: 'center',
         },
         buttonHover: {
-            backgroundColor: 'linear-gradient(135deg, #88c0d0, #4c5c68)', 
+            backgroundColor: 'rgba(120, 120, 120, 0.9)', 
         },
         error: {
             color: 'red',
