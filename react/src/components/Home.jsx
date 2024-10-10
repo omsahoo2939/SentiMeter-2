@@ -6,15 +6,15 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <nav className="nav-bar">
-        <Link to="/feedbackForm">
+        {props.reportsTo>0 &&(<Link to="/feedbackForm">
           <button className="nav-button">Give Feedback</button>
-        </Link>
-        <Link to="/questionForm">
+        </Link>)}
+        {props.reportsTo>0 &&(<Link to="/questionForm">
           <button className="nav-button">Ask Questions</button>
-        </Link>
-        <Link to="/checkFeedback">
+        </Link>)}
+        {props.directReports.length>0 &&(<Link to="/checkFeedback">
           <button className="nav-button">Check Feedback</button>
-        </Link>
+        </Link>)}
       </nav>
       <h1 className="main-title">Welcome to SentiMeter</h1>
       <div>{props.email}</div>
