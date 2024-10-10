@@ -8,9 +8,15 @@ import Login from './components/Login';
 
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [userEmail, setUserEmail] = useState('');
+    const [userEmail, setUserEmail] = useState([]);
+    const [userId, setUserId] = useState(-1);
+    const [userReportsTo, setUserReportsTo] = useState(-1);
+    const [userDirectReports, setUserDirectReports] = useState([]);
 // user setuser pass down setuser
-    const handleLoginSuccess = (email) => {
+    const handleLoginSuccess = (email,id,reportsTo,directReports) => {
+      setUserId(id)
+      setUserReportsTo(reportsTo)
+      setUserDirectReports(directReports)
       setUserEmail(email)
       setIsLoggedIn(true);
     };
@@ -24,9 +30,9 @@ const App = () => {
                 <Route path="/login" element={<Login onLoginSuccess={handleLoginSuccess} />} />
                 {userEmail}
                 <Route path="/home" element={isLoggedIn ? <Home data={userEmail}/> : <Navigate to="/login" />} />
-                <Route path="/feedbackForm" element={isLoggedIn ? <FeedbackForm /> : <Navigate to="/login" />} />
-                <Route path="/questionForm" element={isLoggedIn ? <QuestionForm /> : <Navigate to="/login" />} />
-                <Route path="/employees" element={isLoggedIn ? <Employees /> : <Navigate to="/login" />} />
+                <Route path="/feedbackForm" element={isLoggedIn ? <FeedbackForm data={userEmail}/> : <Navigate to="/login" />} />
+                <Route path="/questionForm" element={isLoggedIn ? <QuestionForm data={userEmail}/> : <Navigate to="/login" />} />
+                <Route path="/employees" element={isLoggedIn ? <Employees data={userEmail}/> : <Navigate to="/login" />} />
                 <Route path="*" element={<Navigate to="/login" />} />
                 {/* <Route path="/add" element={<AddSock /> } /> */}
             </Routes>

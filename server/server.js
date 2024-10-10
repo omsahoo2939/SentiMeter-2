@@ -26,6 +26,15 @@ app.get('/api/employees', async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 });
+app.get('/api/employees/:email', async (req, res) => {
+    try {
+        const { email } = req.params;
+        const employees = await db.collection('employees').find({'email': email}).toArray();
+        res.json(employees);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
 
 app.get('/api/feedbacks', async (req, res) => {
     try {

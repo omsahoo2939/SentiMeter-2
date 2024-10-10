@@ -8,7 +8,7 @@ function Login({ onLoginSuccess }) {
     const [success, setSuccess] = useState(false);
     const navigate = useNavigate(); 
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
@@ -16,7 +16,15 @@ function Login({ onLoginSuccess }) {
             setSuccess(false);
             return;
         }
-        onLoginSuccess(email);
+        const response = await fetch(`http://localhost:3001/api/employees/${email}`);
+        if (!response.ok) {
+          throw new Error('Data could not be fetched!');
+        }
+        let json_response = await response.json();
+        json_response = json_response[0];
+        onLoginSuccess(json_response.email,json_response.id,json_response.reportsTo,json_response.directReports);
+
+
         setSuccess(true);
         setError('');
         setEmail('');
