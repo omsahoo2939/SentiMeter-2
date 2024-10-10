@@ -34,7 +34,6 @@ const CheckFeedback = (props) => {
             <Link to={`/question/${question.id}`} style={styles.link}>
               {question.question}
             </Link>
-            <p style={styles.feedbackText}>{question.question}</p>
           </li>
         ))}
       </ul>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useHistory } from 'react-router-dom';
 import SubmittedPage from './SubmittedPageFeedback.jsx';
 
 const FormContainer = styled.div`
