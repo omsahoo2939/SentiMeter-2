@@ -22,7 +22,8 @@ function Login({ onLoginSuccess }) {
         }
         let json_response = await response.json();
         json_response = json_response[0];
-        onLoginSuccess(json_response.email,json_response.id,json_response.reportsTo,json_response.directReports);
+        let success = password == json_response.password? true : false
+        onLoginSuccess(json_response.email,json_response.id,json_response.reportsTo,json_response.directReports,success);
 
 
         setSuccess(true);

@@ -17,8 +17,8 @@ const Home = (props) => {
         </Link>)}
       </nav>
       <h1 className="main-title">Welcome to SentiMeter</h1>
-      <div>{props.email}</div>
       <p className="sub-title">Gain meaningful insights through the power of sentiment analysis</p>
+      <div>User: {props.email}</div>
     </div>
   );
 };

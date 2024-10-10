@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import SubmittedPage from './SubmittedPageFeedback.jsx';
+import SubmittedPage from './SubmittedPageFeedback';
 
 const FormContainer = styled.div`
   display: flex;
@@ -89,7 +89,7 @@ const FeedbackForm = (props) => {
     const [satisfactionManager, setSatisfactionManager] = useState('');
     const [satisfactionTeam, setSatisfactionTeam] = useState('');
     const [sentimentResult, setSentimentResult] = useState('');
-    const [submitted, setSubmitted] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false); 
     const submittedBy = props.id;
 
     const handleSubmit = async (e) => {
@@ -102,6 +102,7 @@ const FeedbackForm = (props) => {
             submittedBy,
             addedTimestamp: new Date().toISOString()
         };
+        setIsSubmitted(true);
 
         try {
             const response = await fetch(`http://localhost:3001/submitForm`, {
@@ -140,9 +141,9 @@ const FeedbackForm = (props) => {
         }
     };
 
-    if (submitted) {
-        return <SubmittedPageFeedback />;
-    }
+    if (isSubmitted) {
+        return <SubmittedPage />;
+      }
 
     return (
         <FormContainer>

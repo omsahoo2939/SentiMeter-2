@@ -11,16 +11,17 @@ import Login from './components/Login';
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [userEmail, setUserEmail] = useState([]);
+    const [userPassword, setUserPassword] = useState('');
     const [userId, setUserId] = useState(-1);
     const [userReportsTo, setUserReportsTo] = useState(-1);
     const [userDirectReports, setUserDirectReports] = useState([]);
 // user setuser pass down setuser
-    const handleLoginSuccess = (email,id,reportsTo,directReports) => {
+    const handleLoginSuccess = (email,id,reportsTo,directReports,success) => {
       setUserId(id)
       setUserReportsTo(reportsTo)
       setUserDirectReports(directReports)
       setUserEmail(email)
-      setIsLoggedIn(true);
+      setIsLoggedIn(success)
     };
     // const handleLoginSuccess = () => {
     //     setIsLoggedIn(true);

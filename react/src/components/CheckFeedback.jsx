@@ -16,7 +16,7 @@ const CheckFeedback = (props) => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Your Feedback</h1>
+      <h1 style={styles.title}>Feedback</h1>
       <ul style={styles.list}>
         {feedbacks.map(feedback => (
           <li key={feedback.id} style={styles.listItem}>
@@ -27,7 +27,7 @@ const CheckFeedback = (props) => {
           </li>
         ))}
       </ul>
-      <h1 style={styles.title}>Your Questions</h1>
+      <h1 style={styles.title}>Questions</h1>
       <ul style={styles.list}>
         {questions.map(question => (
           <li key={question.id} style={styles.listItem}>
