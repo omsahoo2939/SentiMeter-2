@@ -51,8 +51,7 @@ const styles = {
     position: 'relative',
     minHeight: '100vh',
     overflow: 'hidden',
-    background: 'linear-gradient(135deg, #b30000, #600000)', 
-    color: '#fff',
+    background: 'linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8))',
   },
   title: {
     fontSize: '3rem',

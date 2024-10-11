@@ -39,7 +39,7 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #b30000, #600000)', 
+            background: 'linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8))', 
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
