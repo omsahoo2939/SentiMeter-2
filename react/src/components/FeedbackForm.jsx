@@ -26,13 +26,13 @@ const Form = styled.form`
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  max-width: 600px; /* Increased width for better fit */
+  max-width: 450px;
 `;
 
 const FormTitle = styled.h2`
   text-align: center;
   font-size: 2rem;
-  color: #000; /* Changed color to black */
+  color: #fff;
   margin-bottom: 1.5rem;
 `;
 
@@ -84,10 +84,17 @@ const Button = styled.button`
   }
 `;
 
-const RadioGroup = styled.div`
-  display: flex; /* Use flexbox for horizontal alignment */
-  justify-content: space-between; /* Distribute space evenly */
-  flex-wrap: wrap; /* Allow wrapping if necessary */
+const SentimentContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+`;
+
+const SentimentImage = styled.img`
+  width: 50px; // Adjust size as needed
+  height: 50px; // Adjust size as needed
+  margin-left: 1rem;
 `;
 
 const FeedbackForm = (props) => {
@@ -115,6 +122,7 @@ const FeedbackForm = (props) => {
 
             const sentimentData = await sentimentResponse.json();
             let sentimentResult = sentimentData.sentiment;
+
             const submission = {
                 feedback,
                 satisfactionManager,
@@ -123,6 +131,7 @@ const FeedbackForm = (props) => {
                 sentimentResult,
                 addedTimestamp: new Date().toISOString()
             };
+
             setIsSubmitted(true);
             const response = await fetch(`http://localhost:3001/submitForm`, {
                 method: "POST",
@@ -139,10 +148,18 @@ const FeedbackForm = (props) => {
             setFeedback('');
             setSatisfactionManager('');
             setSatisfactionTeam('');
-            setIsSubmitted(true);
         } catch (error) {
             console.error("Error posting data", error);
         }
+    };
+
+    const getSentimentImage = () => {
+        if (feedback.includes("bad") || feedback.includes("terrible") || feedback.includes("poor")) {
+            return '../assets/frowny.png';
+        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent")) {
+            return '../assets/smiley.png'; 
+        }
+        return null;
     };
 
     if (isSubmitted) {
@@ -156,60 +173,36 @@ const FeedbackForm = (props) => {
 
                 <FormGroup>
                     <Label htmlFor="satisfactionManager">How satisfied are you with your manager?</Label>
-                    <RadioGroup>
-                        <label>
-                            <input type="radio" value="Very Satisfied" checked={satisfactionManager === "Very Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} />
-                            Very Satisfied
-                        </label>
-                        <label>
-                            <input type="radio" value="Moderately Satisfied" checked={satisfactionManager === "Moderately Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} />
-                            Moderately Satisfied
-                        </label>
-                        <label>
-                            <input type="radio" value="Neutral" checked={satisfactionManager === "Neutral"} onChange={e => setSatisfactionManager(e.target.value)} />
-                            Neutral
-                        </label>
-                        <label>
-                            <input type="radio" value="Unsatisfied" checked={satisfactionManager === "Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} />
-                            Unsatisfied
-                        </label>
-                        <label>
-                            <input type="radio" value="Very Unsatisfied" checked={satisfactionManager === "Very Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} />
-                            Very Unsatisfied
-                        </label>
-                    </RadioGroup>
+                    <div>
+                        <input type="radio" value="Very Satisfied" checked={satisfactionManager === "Very Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Very Satisfied
+                        <input type="radio" value="Moderately Satisfied" checked={satisfactionManager === "Moderately Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Moderately Satisfied
+                        <input type="radio" value="Neutral" checked={satisfactionManager === "Neutral"} onChange={e => setSatisfactionManager(e.target.value)} /> Neutral
+                        <input type="radio" value="Unsatisfied" checked={satisfactionManager === "Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Unsatisfied
+                        <input type="radio" value="Very Unsatisfied" checked={satisfactionManager === "Very Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Very Unsatisfied
+                    </div>
                 </FormGroup>
 
                 <FormGroup>
                     <Label htmlFor="satisfactionTeam">How satisfied are you with your team?</Label>
-                    <RadioGroup>
-                        <label>
-                            <input type="radio" value="Very Satisfied" checked={satisfactionTeam === "Very Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} />
-                            Very Satisfied
-                        </label>
-                        <label>
-                            <input type="radio" value="Moderately Satisfied" checked={satisfactionTeam === "Moderately Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} />
-                            Moderately Satisfied
-                        </label>
-                        <label>
-                            <input type="radio" value="Neutral" checked={satisfactionTeam === "Neutral"} onChange={e => setSatisfactionTeam(e.target.value)} />
-                            Neutral
-                        </label>
-                        <label>
-                            <input type="radio" value="Unsatisfied" checked={satisfactionTeam === "Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} />
-                            Unsatisfied
-                        </label>
-                        <label>
-                            <input type="radio" value="Very Unsatisfied" checked={satisfactionTeam === "Very Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} />
-                            Very Unsatisfied
-                        </label>
-                    </RadioGroup>
+                    <div>
+                        <input type="radio" value="Very Satisfied" checked={satisfactionTeam === "Very Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Very Satisfied
+                        <input type="radio" value="Moderately Satisfied" checked={satisfactionTeam === "Moderately Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Moderately Satisfied
+                        <input type="radio" value="Neutral" checked={satisfactionTeam === "Neutral"} onChange={e => setSatisfactionTeam(e.target.value)} /> Neutral
+                        <input type="radio" value="Unsatisfied" checked={satisfactionTeam === "Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Unsatisfied
+                        <input type="radio" value="Very Unsatisfied" checked={satisfactionTeam === "Very Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Very Unsatisfied
+                    </div>
                 </FormGroup>
 
                 <FormGroup>
                     <Label htmlFor="feedback">Feedback:</Label>
                     <TextArea id="feedback" value={feedback} onChange={e => setFeedback(e.target.value)} required />
                 </FormGroup>
+
+                <SentimentContainer>
+                    {getSentimentImage() && (
+                        <SentimentImage src={getSentimentImage()} alt="sentiment face" />
+                    )}
+                </SentimentContainer>
 
                 <Button type="submit">Submit Feedback</Button>
             </Form>
