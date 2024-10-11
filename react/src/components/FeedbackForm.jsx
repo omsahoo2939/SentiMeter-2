@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import SubmittedPage from './SubmittedPageFeedback';
 import frownyFace from '../assets/frowny10.png';
-import smileyFace from '../assets/smiley5.jpeg';
+import smileyFace from '../assets/greensmiley.png';
 
 const FormContainer = styled.div`
   display: flex;
