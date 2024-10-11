@@ -6,7 +6,7 @@ const SubmittedContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #6a85b6, #bac8e0);
+  background: linear-gradient(135deg, #b30000, #600000); /* Dark red gradient */
   animation: gradientBG 15s ease infinite;
   background-size: 400% 400%;
 
@@ -30,13 +30,13 @@ const Message = styled.div`
   }
 
   h2 {
-    color: #4c5c68;
+    color: #4c5c68; /* Dark text for contrast */
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
 
   p {
-    color: #333;
+    color: #333; /* Dark text */
     font-size: 1.2rem;
     margin: 0;
   }
