@@ -7,33 +7,32 @@ const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #f5f5f5, #ffffff); // Light background for contrast with form
+  background: linear-gradient(135deg, #b23131, #ff4d4d);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 `;
 
 const Form = styled.form`
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   padding: 2.5rem;
+  backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  max-width: 450px;
-  animation: formEntry 1s ease forwards;
-  transform: translateY(30px);
-  opacity: 0;
-
-  @keyframes formEntry {
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+  max-width: 600px; /* Keep the form width narrower */
 `;
 
 const FormTitle = styled.h2`
   text-align: center;
   font-size: 2rem;
-  color: #e63946; // Travelers' brand red
+  color: #fff;
   margin-bottom: 1.5rem;
 `;
 
@@ -43,7 +42,7 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-size: 1.2rem;
-  color: #333; // Dark text for contrast
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.5rem;
   display: block;
 `;
@@ -68,16 +67,17 @@ const TextArea = styled.textarea`
   width: 100%;
   padding: 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 1rem;
   color: #333;
   background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
   min-height: 150px;
   transition: border-color 0.3s ease;
 
   &:focus {
     outline: none;
-    border-color: #e63946; // Travelers' brand red
+    border-color: #ffb3b3; /* Soft red focus border */
   }
 `;
 
@@ -85,7 +85,7 @@ const Button = styled.button`
   width: 100%;
   padding: 1rem;
   border-radius: 12px;
-  background: linear-gradient(135deg, #4c5c68, #e63946); // Dark to Travelers' brand red
+  background: linear-gradient(135deg, #b23131, #ff4d4d);
   color: white;
   font-size: 1.2rem;
   border: none;
@@ -94,7 +94,7 @@ const Button = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #e63946, #4c5c68); // Inverted hover effect
+    background: linear-gradient(135deg, #ff4d4d, #b23131); /* Lighter hover */
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   }
