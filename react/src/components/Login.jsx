@@ -39,7 +39,7 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #b30000, #600000)', // Softer blend of red
+            background: 'linear-gradient(135deg, #b30000, #600000)', 
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
@@ -48,14 +48,14 @@ function Login({ onLoginSuccess }) {
             position: 'absolute',
             top: '20px',
             right: '20px',
-            width: '200px', // Bigger logo
+            width: '200px',
         },
         form: {
             display: 'flex',
             flexDirection: 'column',
-            width: '350px', // Wider box to include "SENTIMETER"
+            width: '350px', 
             background: 'rgba(255, 255, 255, 0.9)',
-            padding: '30px', // Increased padding
+            padding: '30px', 
             borderRadius: '12px',
             boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
             zIndex: 1,
@@ -65,7 +65,7 @@ function Login({ onLoginSuccess }) {
             marginBottom: '20px',
             fontSize: '2rem',
             fontWeight: 'bold',
-            color: 'black', // Black and bold
+            color: 'black', 
         },
         label: {
             marginBottom: '10px',
@@ -83,7 +83,7 @@ function Login({ onLoginSuccess }) {
             border: '1px solid #000',
             borderRadius: '4px',
             background: '#f5f5f5',
-            width: '100%', // Ensuring equal width for both input fields
+            width: '280px', 
             boxSizing: 'border-box',
         },
         button: {
