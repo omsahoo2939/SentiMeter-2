@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import SubmittedPage from './SubmittedPageFeedback';
+import frownyFace from '../assets/frowny2.png';
+import smileyFace from '../assets/smiley2.png';
 
 const FormContainer = styled.div`
   display: flex;
@@ -157,13 +159,12 @@ const FeedbackForm = (props) => {
     };
 
     const getSentimentImage = () => {
-        // Basic sentiment analysis based on the feedback text
-        if (feedback.includes("bad") || feedback.includes("terrible") || feedback.includes("poor")) {
-            return "/path/to/frowny-face.png"; // Adjust the path to your frowny face image
-        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent")) {
-            return "/path/to/smiley-face.png"; // Adjust the path to your smiley face image
+        if (feedback.includes("bad") || feedback.includes("terrible") || feedback.includes("poor")|| feedback.includes("awful")|| feedback.includes("mean")) {
+            return frownyFace;
+        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent")|| feedback.includes("love")|| feedback.includes("like")) {
+            return smileyFace;
         }
-        return null; // No image if sentiment is neutral
+        return null; 
     };
 
     if (isSubmitted) {
