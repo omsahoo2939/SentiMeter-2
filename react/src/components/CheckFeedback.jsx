@@ -9,10 +9,11 @@ const CheckFeedback = (props) => {
     fetch('http://localhost:3001/api/feedbacks')
       .then(response => response.json())
       .then(data => setFeedbacks(data.filter(x => props.directReports.includes(x.submittedBy))));
-      fetch('http://localhost:3001/api/questions')
+    
+    fetch('http://localhost:3001/api/questions')
       .then(response => response.json())
       .then(data => setQuestions(data.filter(x => props.directReports.includes(x.submittedBy))));
-    }, []);
+  }, [props.directReports]);
 
   return (
     <div style={styles.container}>
@@ -24,7 +25,7 @@ const CheckFeedback = (props) => {
               Manager Satisfaction: {feedback.satisfactionManager}
             </Link>
             <p style={styles.feedbackText}>Sentiment: {feedback.sentimentResult}</p>
-            <p style={styles.feedbackText}>Team Satisfaciton: {feedback.satisfactionTeam}</p>
+            <p style={styles.feedbackText}>Team Satisfaction: {feedback.satisfactionTeam}</p>
             <p style={styles.feedbackText}>{feedback.feedback}</p>
           </li>
         ))}
@@ -50,15 +51,17 @@ const styles = {
     position: 'relative',
     minHeight: '100vh',
     overflow: 'hidden',
-    background: 'linear-gradient(135deg, #6a85b6, #bac8e0)',
+    background: 'linear-gradient(135deg, #b30000, #600000)', 
     color: '#fff',
   },
   title: {
     fontSize: '3rem',
-    color: '#FFFFFF',
+    color: '#fff',
     textAlign: 'center',
     marginBottom: '20px',
-    
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '1.5px',
   },
   list: {
     listStyleType: 'none',
@@ -68,20 +71,26 @@ const styles = {
   listItem: {
     marginBottom: '15px',
     transition: 'transform 0.3s ease',
-    background: 'rgba(255, 255, 255, 0.1)',
+    background: 'rgba(255, 255, 255, 0.2)', 
     borderRadius: '8px',
-    padding: '15px',
-    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+    padding: '20px',
+    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.4)', 
+    color: '#fff',
+    fontSize: '1.2rem',
+    textAlign: 'left',
   },
   link: {
-    color: '#FFFFFF',
+    color: '#fff',
     fontSize: '1.5rem',
     textDecoration: 'none',
+    fontWeight: 'bold',
     transition: 'color 0.3s ease',
   },
   feedbackText: {
     color: '#fff',
-    marginTop: '5px',
+    marginTop: '10px',
+    fontSize: '1rem',
+    lineHeight: '1.5',
   },
 };
 
