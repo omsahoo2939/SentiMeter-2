@@ -119,7 +119,7 @@ function Login({ onLoginSuccess }) {
                     <label style={styles.label}>
                         Email:
                         <input 
-                            type="email" 
+                            type="username" 
                             value={email} 
                             onChange={e => setEmail(e.target.value)} 
                             style={styles.input}
@@ -132,7 +132,7 @@ function Login({ onLoginSuccess }) {
                             type="password" 
                             value={password} 
                             onChange={e => setPassword(e.target.value)} 
-                            style={styles.input} // Same style for both inputs
+                            style={styles.input} 
                             required 
                         />
                     </label>
