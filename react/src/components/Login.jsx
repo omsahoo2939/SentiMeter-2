@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import travelersLogo from '<div className="" />travelerslogo.png'; 
+import travelersLogo from '../assets/travelerslogo.png'; 
 
 function Login({ onLoginSuccess }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -19,7 +19,7 @@ function Login({ onLoginSuccess }) {
         }
         const response = await fetch(`http://localhost:3001/api/employees/${email}`);
         if (!response.ok) {
-          throw new Error('Data could not be fetched!');
+            throw new Error('Data could not be fetched!');
         }
         let json_response = await response.json();
         json_response = json_response[0];
@@ -39,22 +39,16 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #000, #d40000)', // Black and red gradient
+            background: 'linear-gradient(135deg, #d40000, #8b0000)', 
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
-            overflow: 'hidden',
         },
         logo: {
+            position: 'absolute',
+            top: '20px',
+            right: '20px',
             width: '150px',
-            marginBottom: '20px',
-        },
-        title: {
-            marginBottom: '20px',
-            fontSize: '2rem',
-            color: '#fff', 
-            textAlign: 'center',
-            zIndex: 1,
         },
         form: {
             display: 'flex',
@@ -71,12 +65,18 @@ function Login({ onLoginSuccess }) {
             fontWeight: 'bold',
             color: '#000', 
         },
+        inputContainer: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+        },
         input: {
             padding: '10px',
             marginBottom: '15px',
             border: '1px solid #000', 
             borderRadius: '4px',
             background: '#f5f5f5',
+            width: '100%', // Ensures input fields are aligned
         },
         button: {
             padding: '10px',
@@ -105,28 +105,29 @@ function Login({ onLoginSuccess }) {
     return (
         <div style={styles.container}>
             <img src={travelersLogo} alt="Travelers Logo" style={styles.logo} />
-            <h2 style={styles.title}>Login</h2>
             <form onSubmit={handleSubmit} style={styles.form}>
-                <label style={styles.label}>
-                    Email:
-                    <input 
-                        type="email" 
-                        value={email} 
-                        onChange={e => setEmail(e.target.value)} 
-                        style={styles.input}
-                        required 
-                    />
-                </label>
-                <label style={styles.label}>
-                    Password:
-                    <input 
-                        type="password" 
-                        value={password} 
-                        onChange={e => setPassword(e.target.value)} 
-                        style={styles.input}
-                        required 
-                    />
-                </label>
+                <div style={styles.inputContainer}>
+                    <label style={styles.label}>
+                        Email:
+                        <input 
+                            type="email" 
+                            value={email} 
+                            onChange={e => setEmail(e.target.value)} 
+                            style={styles.input}
+                            required 
+                        />
+                    </label>
+                    <label style={styles.label}>
+                        Password:
+                        <input 
+                            type="password" 
+                            value={password} 
+                            onChange={e => setPassword(e.target.value)} 
+                            style={styles.input}
+                            required 
+                        />
+                    </label>
+                </div>
                 <button 
                     type="submit" 
                     style={styles.button}
