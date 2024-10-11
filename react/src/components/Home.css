@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .home-container {
-    background: linear-gradient(135deg, #b30000, #600000); /* Dark red gradient */
+    background: linear-gradient(135deg, #b30000, #600000); 
     color: #fff;
     text-align: center;
     padding: 50px;
@@ -21,10 +21,10 @@
 }
 
 .nav-button {
-    margin: 10px; /* Adjusted margin for buttons */
+    margin: 10px; 
     padding: 10px 20px;
-    background-color: #d40000; /* Red background */
-    color: #fff; /* White text */
+    background-color: #e2aaaa; 
+    color: #000000; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -34,17 +34,17 @@
 }
 
 .nav-button:hover {
-    background-color: #a30000; /* Darker red on hover */
+    background-color: #a30000; 
 }
 
 .main-title {
-    font-size: 3.5em; /* Increased size for emphasis */
-    color: black; /* Black text for the title */
+    font-size: 3.5em; 
+    color: black; 
     margin: 20px 0;
 }
 
 .sub-title {
     font-size: 1.5em;
     margin-top: 20px;
-    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    color: rgba(255, 255, 255, 0.8); 
 }
