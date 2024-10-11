@@ -22,8 +22,8 @@ const FormContainer = styled.div`
 
 const FormWrapper = styled.div`
   display: flex;
-  flex-direction: column; 
-  position: relative; 
+  flex-direction: column; /* Stack elements vertically */
+  position: relative; /* Position relative for absolute child */
 `;
 
 const Form = styled.form`
@@ -34,7 +34,7 @@ const Form = styled.form`
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  max-width: 600px; 
+  max-width: 600px; /* Keep the form width narrower */
 `;
 
 const FormTitle = styled.h2`
@@ -69,7 +69,7 @@ const TextArea = styled.textarea`
 
   &:focus {
     outline: none;
-    border-color: #ffb3b3; 
+    border-color: #ffb3b3; /* Soft red focus border */
   }
 `;
 
@@ -86,23 +86,21 @@ const Button = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #ff4d4d, #b23131); 
+    background: linear-gradient(135deg, #ff4d4d, #b23131); /* Lighter hover */
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   }
 `;
 
 const SentimentContainer = styled.div`
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
-  display: flex;
-  align-items: center;
+  position: absolute; /* Absolute positioning */
+  top: 10px; /* Adjust the top position */
+  right: 10px; /* Adjust the right position */
 `;
 
 const SentimentImage = styled.img`
-  width: 50px; 
-  height: 50px; 
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
 `;
 
 const FeedbackForm = (props) => {
@@ -212,7 +210,7 @@ const FeedbackForm = (props) => {
                         <TextArea id="feedback" value={feedback} onChange={e => setFeedback(e.target.value)} required />
                     </FormGroup>
 
-                    <Button type="submit">Submit Feedback</Button>
+                    <Button type="submit">Submit</Button>
                 </Form>
             </FormWrapper>
         </FormContainer>
