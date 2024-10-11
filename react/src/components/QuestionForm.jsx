@@ -7,7 +7,7 @@ const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #6a85b6, #bac8e0);
+  background: linear-gradient(135deg, #ffffff, #f5f5f5); // Adjusted to a lighter gradient
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 
@@ -19,12 +19,12 @@ const FormContainer = styled.div`
 `;
 
 const Form = styled.form`
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.9); // Lightened background
   border-radius: 16px;
   padding: 2.5rem;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.1); // Darkened border for contrast
   width: 100%;
   max-width: 450px;
   animation: formEntry 1s ease forwards;
@@ -42,7 +42,7 @@ const Form = styled.form`
 const FormTitle = styled.h2`
   text-align: center;
   font-size: 2rem;
-  color: #f5f5f5;
+  color: #4c5c68; // Updated to match your button color
   margin-bottom: 1.5rem;
 `;
 
@@ -52,7 +52,7 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7); // Darkened label color for readability
   margin-bottom: 0.5rem;
   display: block;
 `;
@@ -61,7 +61,7 @@ const Select = styled.select`
   width: 100%;
   padding: 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 1rem;
   color: #333;
   background: rgba(255, 255, 255, 0.9);
@@ -70,7 +70,7 @@ const Select = styled.select`
 
   &:focus {
     outline: none;
-    border-color: #88c0d0;
+    border-color: #4c5c68; // Updated to match your button color
   }
 `;
 
@@ -78,7 +78,7 @@ const TextArea = styled.textarea`
   width: 100%;
   padding: 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 1rem;
   color: #333;
   background: rgba(255, 255, 255, 0.9);
@@ -88,7 +88,7 @@ const TextArea = styled.textarea`
 
   &:focus {
     outline: none;
-    border-color: #88c0d0;
+    border-color: #4c5c68; // Updated to match your button color
   }
 `;
 
@@ -96,7 +96,7 @@ const Button = styled.button`
   width: 100%;
   padding: 1rem;
   border-radius: 12px;
-  background: linear-gradient(135deg, #4c5c68, #88c0d0);
+  background: linear-gradient(135deg, #4c5c68, #88c0d0); // Consistent with previous styles
   color: white;
   font-size: 1.2rem;
   border: none;
@@ -105,7 +105,7 @@ const Button = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #88c0d0, #4c5c68);
+    background: linear-gradient(135deg, #88c0d0, #4c5c68); // Consistent hover effect
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   }
@@ -129,7 +129,6 @@ const QuestionForm = (props) => {
     setIsSubmitted(true);
 
     try {
-  
         const response = await fetch(`http://localhost:3001/questionForm`, {
             method: "POST",
             headers: {
@@ -147,9 +146,8 @@ const QuestionForm = (props) => {
 
     } catch (error) {
         console.error("Error posting data", error);
-  
     }
-};
+  };
 
   const topics = [
     'Work Environment',
@@ -159,15 +157,6 @@ const QuestionForm = (props) => {
     'Compensation and Benefits',
     'Other'
   ];
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log('Topic:', topic);
-  //   console.log('Question:', question);
-
-  //   setIsSubmitted(true); 
-  // };
-
   
   if (isSubmitted) {
     return <SubmittedPage />;
