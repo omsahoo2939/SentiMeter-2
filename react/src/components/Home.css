@@ -1,4 +1,4 @@
-/* Home.css */
+
 
 body {
   margin: 0;
@@ -29,7 +29,7 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  max-width: 600px; /* Keep the form width narrower */
+  max-width: 600px; 
   text-align: center;
 }
 
@@ -50,11 +50,11 @@ body {
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  margin-bottom: 1rem; /* Space between buttons */
+  margin-bottom: 1rem; 
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #b23131, #ff4d4d); /* Lighter hover */
+  background: linear-gradient(135deg, #b23131, #ff4d4d); 
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
