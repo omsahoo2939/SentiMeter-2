@@ -7,7 +7,7 @@ const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #6a85b6, #bac8e0);
+  background: linear-gradient(135deg, #b23131, #ff4d4d); /* Reddish theme */
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 
@@ -19,7 +19,7 @@ const FormContainer = styled.div`
 `;
 
 const Form = styled.form`
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   padding: 2.5rem;
   backdrop-filter: blur(10px);
@@ -32,7 +32,7 @@ const Form = styled.form`
 const FormTitle = styled.h2`
   text-align: center;
   font-size: 2rem;
-  color: #f5f5f5;
+  color: #fff;
   margin-bottom: 1.5rem;
 `;
 
@@ -42,7 +42,7 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.5rem;
   display: block;
 `;
@@ -61,7 +61,7 @@ const TextArea = styled.textarea`
 
   &:focus {
     outline: none;
-    border-color: #88c0d0;
+    border-color: #ffb3b3; /* Soft red focus border */
   }
 `;
 
@@ -69,7 +69,7 @@ const Button = styled.button`
   width: 100%;
   padding: 1rem;
   border-radius: 12px;
-  background: linear-gradient(135deg, #4c5c68, #88c0d0);
+  background: linear-gradient(135deg, #b23131, #ff4d4d);
   color: white;
   font-size: 1.2rem;
   border: none;
@@ -78,7 +78,7 @@ const Button = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #88c0d0, #4c5c68);
+    background: linear-gradient(135deg, #ff4d4d, #b23131); /* Lighter hover */
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   }
@@ -94,7 +94,6 @@ const FeedbackForm = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-
         try {
           const sentimentResponse = await fetch(`http://127.0.0.1:5000/analyzeSentiment`, {
             method: "POST",
@@ -109,7 +108,7 @@ const FeedbackForm = (props) => {
           }
 
         const sentimentData = await sentimentResponse.json();
-        let sentimentResult = sentimentData.sentiment
+        let sentimentResult = sentimentData.sentiment;
         const submission = {
               feedback,
               satisfactionManager,
@@ -131,12 +130,10 @@ const FeedbackForm = (props) => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-
-
             setFeedback('');
             setSatisfactionManager('');
             setSatisfactionTeam('');
-            setSubmitted(true);
+            setIsSubmitted(true);
         } catch (error) {
             console.error("Error posting data", error);
         }
