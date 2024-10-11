@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import travelersLogo from '../assets/travelerslogo.png'; 
+import travelersLogo from '../assets/travelerslogo.png';
 
 function Login({ onLoginSuccess }) {
     const [email, setEmail] = useState('');
@@ -39,7 +39,7 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #d40000, #8b0000)', // Smooth blend from red to darker red
+            background: 'linear-gradient(135deg, #b30000, #600000)', 
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
@@ -48,22 +48,31 @@ function Login({ onLoginSuccess }) {
             position: 'absolute',
             top: '20px',
             right: '20px',
-            width: '150px',
+            width: '200px', 
         },
         form: {
             display: 'flex',
             flexDirection: 'column',
-            width: '300px',
-            background: 'rgba(255, 255, 255, 0.9)', 
-            padding: '20px',
+            width: '350px', 
+            background: 'rgba(255, 255, 255, 0.9)',
+            padding: '30px', 
             borderRadius: '12px',
             boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
             zIndex: 1,
         },
+        header: {
+            textAlign: 'center',
+            marginBottom: '20px',
+            fontSize: '2rem',
+            fontWeight: 'bold',
+            background: 'linear-gradient(to right, #d40000, #000)', 
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+        },
         label: {
             marginBottom: '10px',
             fontWeight: 'bold',
-            color: '#000', 
+            color: '#000',
         },
         inputContainer: {
             display: 'flex',
@@ -73,14 +82,14 @@ function Login({ onLoginSuccess }) {
         input: {
             padding: '10px',
             marginBottom: '15px',
-            border: '1px solid #000', 
+            border: '1px solid #000',
             borderRadius: '4px',
             background: '#f5f5f5',
-            width: '100%', 
+            width: '100%',
         },
         button: {
             padding: '10px',
-            backgroundColor: '#d40000', 
+            backgroundColor: '#d40000',
             color: 'white',
             border: 'none',
             borderRadius: '4px',
@@ -90,7 +99,7 @@ function Login({ onLoginSuccess }) {
             textAlign: 'center',
         },
         buttonHover: {
-            backgroundColor: '#a30000', 
+            backgroundColor: '#a30000',
         },
         error: {
             color: 'red',
@@ -106,6 +115,7 @@ function Login({ onLoginSuccess }) {
         <div style={styles.container}>
             <img src={travelersLogo} alt="Travelers Logo" style={styles.logo} />
             <form onSubmit={handleSubmit} style={styles.form}>
+                <h2 style={styles.header}>SENTIMETER</h2>
                 <div style={styles.inputContainer}>
                     <label style={styles.label}>
                         Email:
