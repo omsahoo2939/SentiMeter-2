@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import SubmittedPage from './SubmittedPageFeedback';
-import frownyFace from '../assets/frowny2.png';
-import smileyFace from '../assets/smiley2.png';
+import frownyFace from '../assets/frowny10.png';
+import smileyFace from '../assets/smiley5.jpeg';
 
 const FormContainer = styled.div`
   display: flex;
