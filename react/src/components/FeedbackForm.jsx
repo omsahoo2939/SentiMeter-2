@@ -21,9 +21,7 @@ const FormContainer = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  position: relative; /* Position relative for absolute child */
+  display: flex; /* Keep the form and sentiment image side by side */
 `;
 
 const Form = styled.form`
@@ -93,9 +91,10 @@ const Button = styled.button`
 `;
 
 const SentimentContainer = styled.div`
-  position: absolute; /* Absolute positioning */
-  top: 10px; /* Adjust the top position */
-  right: 10px; /* Adjust the right position */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; /* Space between sentiment image and textarea */
 `;
 
 const SentimentImage = styled.img`
@@ -114,7 +113,7 @@ const FeedbackForm = (props) => {
         e.preventDefault();
 
         try {
-            const sentimentResponse = await fetch(`http://127.0.0.1:5000/analyzeSentiment`, {
+            const sentimentResponse = await fetch('http://127.0.0.1:5000/analyzeSentiment', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -139,7 +138,7 @@ const FeedbackForm = (props) => {
             };
 
             setIsSubmitted(true);
-            const response = await fetch(`http://localhost:3001/submitForm`, {
+            const response = await fetch('http://localhost:3001/submitForm', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -175,11 +174,6 @@ const FeedbackForm = (props) => {
     return (
         <FormContainer>
             <FormWrapper>
-                <SentimentContainer>
-                    {getSentimentImage() && (
-                        <SentimentImage src={getSentimentImage()} alt="sentiment face" />
-                    )}
-                </SentimentContainer>
                 <Form onSubmit={handleSubmit}>
                     <FormTitle>Feedback Form</FormTitle>
 
@@ -205,13 +199,20 @@ const FeedbackForm = (props) => {
                         </div>
                     </FormGroup>
 
+                    <SentimentContainer>
+                        {getSentimentImage() && (
+                            <SentimentImage src={getSentimentImage()} alt="sentiment face" />
+                        )}
+                    </SentimentContainer>
+
                     <FormGroup>
                         <Label htmlFor="feedback">Feedback:</Label>
                         <TextArea id="feedback" value={feedback} onChange={e => setFeedback(e.target.value)} required />
                     </FormGroup>
 
-                    <Button type="submit">Submit</Button>
+                    <Button type="submit">Submit Feedback</Button>
                 </Form>
+
             </FormWrapper>
         </FormContainer>
     );
