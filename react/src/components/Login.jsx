@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import travelersLogo from './assets/travelerslogo.png'; 
 
 function Login({ onLoginSuccess }) {
     const [email, setEmail] = useState('');
@@ -22,15 +23,13 @@ function Login({ onLoginSuccess }) {
         }
         let json_response = await response.json();
         json_response = json_response[0];
-        let success = password == json_response.password? true : false
-        onLoginSuccess(json_response.email,json_response.id,json_response.reportsTo,json_response.directReports,success);
-
+        let success = password === json_response.password;
+        onLoginSuccess(json_response.email, json_response.id, json_response.reportsTo, json_response.directReports, success);
 
         setSuccess(true);
         setError('');
         setEmail('');
         setPassword('');
-        
         navigate('/home');
     };
 
@@ -40,59 +39,48 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #6a85b6, #bac8e0)', 
+            background: 'linear-gradient(135deg, #000, #d40000)', // Black and red gradient
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
             overflow: 'hidden',
         },
-        texture: {
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: 'url(https://www.transparenttextures.com/patterns/white-paper.png)', 
-            opacity: 0.1,
-            zIndex: 0,
+        logo: {
+            width: '150px',
+            marginBottom: '20px',
         },
         title: {
             marginBottom: '20px',
             fontSize: '2rem',
-            color: '#f5f5f5', 
+            color: '#fff', 
             textAlign: 'center',
             zIndex: 1,
-            position: 'absolute',
-            top: '30%', 
-            left: '50%',
-            transform: 'translateX(-50%)',
         },
         form: {
             display: 'flex',
             flexDirection: 'column',
             width: '300px',
-            background: 'rgba(255, 255, 255, 0.1)', 
+            background: 'rgba(255, 255, 255, 0.9)', 
             padding: '20px',
             borderRadius: '12px',
             boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
             zIndex: 1,
-            marginTop: '60px', 
         },
         label: {
             marginBottom: '10px',
             fontWeight: 'bold',
-            color: 'rgba(255, 255, 255, 0.7)', 
+            color: '#000', 
         },
         input: {
             padding: '10px',
             marginBottom: '15px',
-            border: '1px solid rgba(255, 255, 255, 0.3)', 
+            border: '1px solid #000', 
             borderRadius: '4px',
-            background: 'rgba(255, 255, 255, 0.9)', 
+            background: '#f5f5f5',
         },
         button: {
             padding: '10px',
-            backgroundColor: 'rgba(100, 100, 100, 0.7)', 
+            backgroundColor: '#d40000', 
             color: 'white',
             border: 'none',
             borderRadius: '4px',
@@ -102,7 +90,7 @@ function Login({ onLoginSuccess }) {
             textAlign: 'center',
         },
         buttonHover: {
-            backgroundColor: 'rgba(120, 120, 120, 0.9)', 
+            backgroundColor: '#a30000', 
         },
         error: {
             color: 'red',
@@ -116,7 +104,7 @@ function Login({ onLoginSuccess }) {
 
     return (
         <div style={styles.container}>
-            <div style={styles.texture}></div>
+            <img src={travelersLogo} alt="Travelers Logo" style={styles.logo} />
             <h2 style={styles.title}>Login</h2>
             <form onSubmit={handleSubmit} style={styles.form}>
                 <label style={styles.label}>
