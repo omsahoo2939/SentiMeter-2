@@ -18,9 +18,11 @@ const FormContainer = styled.div`
   }
 `;
 
+const FormWrapper = styled.div`
+  display: flex; /* Keep the form and sentiment image side by side */
+`;
+
 const Form = styled.form`
-  display: flex; /* Enable flexbox */
-  flex-direction: row; /* Align children in a row */
   background: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   padding: 2.5rem;
@@ -28,7 +30,7 @@ const Form = styled.form`
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  max-width: 800px; /* Increase width for better layout */
+  max-width: 600px; /* Keep the form width narrower */
 `;
 
 const FormTitle = styled.h2`
@@ -36,12 +38,10 @@ const FormTitle = styled.h2`
   font-size: 2rem;
   color: #fff;
   margin-bottom: 1.5rem;
-  width: 100%; /* Ensure title spans full width */
 `;
 
 const FormGroup = styled.div`
   margin-bottom: 1.2rem;
-  flex: 1; /* Allow this to grow */
 `;
 
 const Label = styled.label`
@@ -157,12 +157,13 @@ const FeedbackForm = (props) => {
     };
 
     const getSentimentImage = () => {
+        // Basic sentiment analysis based on the feedback text
         if (feedback.includes("bad") || feedback.includes("terrible") || feedback.includes("poor")) {
-            return "'../assets/frowny2.png'"; 
-        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent") || feedback.includes("love")|| feedback.includes("like")) {
-            return "'../assets/smiley2.png'"; 
+            return "/path/to/frowny-face.png"; // Adjust the path to your frowny face image
+        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent")) {
+            return "/path/to/smiley-face.png"; // Adjust the path to your smiley face image
         }
-        return null; 
+        return null; // No image if sentiment is neutral
     };
 
     if (isSubmitted) {
@@ -171,44 +172,46 @@ const FeedbackForm = (props) => {
 
     return (
         <FormContainer>
-            <Form onSubmit={handleSubmit}>
-                <FormTitle>Feedback Form</FormTitle>
+            <FormWrapper>
+                <Form onSubmit={handleSubmit}>
+                    <FormTitle>Feedback Form</FormTitle>
 
-                <FormGroup>
-                    <Label htmlFor="satisfactionManager">How satisfied are you with your manager?</Label>
-                    <div>
-                        <input type="radio" value="Very Satisfied" checked={satisfactionManager === "Very Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Very Satisfied
-                        <input type="radio" value="Moderately Satisfied" checked={satisfactionManager === "Moderately Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Moderately Satisfied
-                        <input type="radio" value="Neutral" checked={satisfactionManager === "Neutral"} onChange={e => setSatisfactionManager(e.target.value)} /> Neutral
-                        <input type="radio" value="Unsatisfied" checked={satisfactionManager === "Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Unsatisfied
-                        <input type="radio" value="Very Unsatisfied" checked={satisfactionManager === "Very Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Very Unsatisfied
-                    </div>
-                </FormGroup>
+                    <FormGroup>
+                        <Label htmlFor="satisfactionManager">How satisfied are you with your manager?</Label>
+                        <div>
+                            <input type="radio" value="Very Satisfied" checked={satisfactionManager === "Very Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Very Satisfied
+                            <input type="radio" value="Moderately Satisfied" checked={satisfactionManager === "Moderately Satisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Moderately Satisfied
+                            <input type="radio" value="Neutral" checked={satisfactionManager === "Neutral"} onChange={e => setSatisfactionManager(e.target.value)} /> Neutral
+                            <input type="radio" value="Unsatisfied" checked={satisfactionManager === "Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Unsatisfied
+                            <input type="radio" value="Very Unsatisfied" checked={satisfactionManager === "Very Unsatisfied"} onChange={e => setSatisfactionManager(e.target.value)} /> Very Unsatisfied
+                        </div>
+                    </FormGroup>
 
-                <FormGroup>
-                    <Label htmlFor="satisfactionTeam">How satisfied are you with your team?</Label>
-                    <div>
-                        <input type="radio" value="Very Satisfied" checked={satisfactionTeam === "Very Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Very Satisfied
-                        <input type="radio" value="Moderately Satisfied" checked={satisfactionTeam === "Moderately Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Moderately Satisfied
-                        <input type="radio" value="Neutral" checked={satisfactionTeam === "Neutral"} onChange={e => setSatisfactionTeam(e.target.value)} /> Neutral
-                        <input type="radio" value="Unsatisfied" checked={satisfactionTeam === "Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Unsatisfied
-                        <input type="radio" value="Very Unsatisfied" checked={satisfactionTeam === "Very Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Very Unsatisfied
-                    </div>
-                </FormGroup>
+                    <FormGroup>
+                        <Label htmlFor="satisfactionTeam">How satisfied are you with your team?</Label>
+                        <div>
+                            <input type="radio" value="Very Satisfied" checked={satisfactionTeam === "Very Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Very Satisfied
+                            <input type="radio" value="Moderately Satisfied" checked={satisfactionTeam === "Moderately Satisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Moderately Satisfied
+                            <input type="radio" value="Neutral" checked={satisfactionTeam === "Neutral"} onChange={e => setSatisfactionTeam(e.target.value)} /> Neutral
+                            <input type="radio" value="Unsatisfied" checked={satisfactionTeam === "Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Unsatisfied
+                            <input type="radio" value="Very Unsatisfied" checked={satisfactionTeam === "Very Unsatisfied"} onChange={e => setSatisfactionTeam(e.target.value)} /> Very Unsatisfied
+                        </div>
+                    </FormGroup>
 
-                <FormGroup>
-                    <Label htmlFor="feedback">Feedback:</Label>
-                    <TextArea id="feedback" value={feedback} onChange={e => setFeedback(e.target.value)} required />
-                </FormGroup>
+                    <FormGroup>
+                        <Label htmlFor="feedback">Feedback:</Label>
+                        <TextArea id="feedback" value={feedback} onChange={e => setFeedback(e.target.value)} required />
+                    </FormGroup>
+
+                    <Button type="submit">Submit Feedback</Button>
+                </Form>
 
                 <SentimentContainer>
                     {getSentimentImage() && (
                         <SentimentImage src={getSentimentImage()} alt="sentiment face" />
                     )}
                 </SentimentContainer>
-
-                <Button type="submit">Submit Feedback</Button>
-            </Form>
+            </FormWrapper>
         </FormContainer>
     );
 };
