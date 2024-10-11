@@ -39,7 +39,7 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #b30000, #600000)', 
+            background: 'linear-gradient(135deg, #b30000, #600000)', // Softer blend of red
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
@@ -48,14 +48,14 @@ function Login({ onLoginSuccess }) {
             position: 'absolute',
             top: '20px',
             right: '20px',
-            width: '200px', 
+            width: '200px', // Bigger logo
         },
         form: {
             display: 'flex',
             flexDirection: 'column',
-            width: '350px', 
+            width: '350px', // Wider box to include "SENTIMETER"
             background: 'rgba(255, 255, 255, 0.9)',
-            padding: '30px', 
+            padding: '30px', // Increased padding
             borderRadius: '12px',
             boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
             zIndex: 1,
@@ -65,9 +65,7 @@ function Login({ onLoginSuccess }) {
             marginBottom: '20px',
             fontSize: '2rem',
             fontWeight: 'bold',
-            background: 'linear-gradient(to right, #d40000, #000)', 
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
+            color: 'black', // Black and bold
         },
         label: {
             marginBottom: '10px',
@@ -85,7 +83,8 @@ function Login({ onLoginSuccess }) {
             border: '1px solid #000',
             borderRadius: '4px',
             background: '#f5f5f5',
-            width: '100%',
+            width: '100%', // Ensuring equal width for both input fields
+            boxSizing: 'border-box',
         },
         button: {
             padding: '10px',
@@ -133,7 +132,7 @@ function Login({ onLoginSuccess }) {
                             type="password" 
                             value={password} 
                             onChange={e => setPassword(e.target.value)} 
-                            style={styles.input}
+                            style={styles.input} // Same style for both inputs
                             required 
                         />
                     </label>
