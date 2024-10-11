@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .home-container {
-  background: linear-gradient(135deg, #6a85b6, #bac8e0);
+  background: linear-gradient(135deg, #e63946, #f1faee);
   color: #fff;
   text-align: center;
   padding: 50px;
@@ -45,8 +45,8 @@
 }
 
 .main-title {
-  font-size: 3em;
-  color: #f5f5f5; 
+  font-size: 3.5em; 
+  color: #fff; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin: 20px 0;
 }
@@ -55,4 +55,10 @@
   font-size: 1.5em;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #fff; 
 }
