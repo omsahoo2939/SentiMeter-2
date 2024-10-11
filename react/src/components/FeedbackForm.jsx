@@ -48,7 +48,7 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   font-size: 1.2rem;
-  color: #000;
+  color: #fff;
   margin-bottom: 0.5rem;
   display: block;
 `;
