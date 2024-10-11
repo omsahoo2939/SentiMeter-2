@@ -7,7 +7,7 @@ const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #b23131, #ff4d4d); /* Reddish theme */
+  background: linear-gradient(135deg, #b23131, #ff4d4d);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 
@@ -19,6 +19,8 @@ const FormContainer = styled.div`
 `;
 
 const Form = styled.form`
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Align children in a row */
   background: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   padding: 2.5rem;
@@ -26,7 +28,7 @@ const Form = styled.form`
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  max-width: 450px;
+  max-width: 800px; /* Increase width for better layout */
 `;
 
 const FormTitle = styled.h2`
@@ -34,10 +36,12 @@ const FormTitle = styled.h2`
   font-size: 2rem;
   color: #fff;
   margin-bottom: 1.5rem;
+  width: 100%; /* Ensure title spans full width */
 `;
 
 const FormGroup = styled.div`
   margin-bottom: 1.2rem;
+  flex: 1; /* Allow this to grow */
 `;
 
 const Label = styled.label`
@@ -88,13 +92,12 @@ const SentimentContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-left: 20px; /* Space between form and sentiment image */
 `;
 
 const SentimentImage = styled.img`
-  width: 50px; // Adjust size as needed
-  height: 50px; // Adjust size as needed
-  margin-left: 1rem;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
 `;
 
 const FeedbackForm = (props) => {
@@ -155,11 +158,11 @@ const FeedbackForm = (props) => {
 
     const getSentimentImage = () => {
         if (feedback.includes("bad") || feedback.includes("terrible") || feedback.includes("poor")) {
-            return '../assets/frowny.png';
-        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent")) {
-            return '../assets/smiley.png'; 
+            return "'../assets/frowny2.png'"; 
+        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent") || feedback.includes("love")|| feedback.includes("like")) {
+            return "'../assets/smiley2.png'"; 
         }
-        return null;
+        return null; 
     };
 
     if (isSubmitted) {
