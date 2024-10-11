@@ -21,7 +21,9 @@ const FormContainer = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  display: flex; /* Keep the form and sentiment image side by side */
+  display: flex;
+  flex-direction: column; 
+  position: relative; 
 `;
 
 const Form = styled.form`
@@ -32,7 +34,7 @@ const Form = styled.form`
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
-  max-width: 600px; /* Keep the form width narrower */
+  max-width: 600px; 
 `;
 
 const FormTitle = styled.h2`
@@ -67,7 +69,7 @@ const TextArea = styled.textarea`
 
   &:focus {
     outline: none;
-    border-color: #ffb3b3; /* Soft red focus border */
+    border-color: #ffb3b3; 
   }
 `;
 
@@ -84,22 +86,23 @@ const Button = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #ff4d4d, #b23131); /* Lighter hover */
+    background: linear-gradient(135deg, #ff4d4d, #b23131); 
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
   }
 `;
 
 const SentimentContainer = styled.div`
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 20px; /* Space between form and sentiment image */
 `;
 
 const SentimentImage = styled.img`
-  width: 50px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
+  width: 50px; 
+  height: 50px; 
 `;
 
 const FeedbackForm = (props) => {
@@ -159,9 +162,9 @@ const FeedbackForm = (props) => {
     };
 
     const getSentimentImage = () => {
-        if (feedback.includes("bad") || feedback.includes("terrible") || feedback.includes("poor")|| feedback.includes("awful")|| feedback.includes("mean")) {
+        if (feedback.includes("bad") || feedback.includes("terrible") || feedback.includes("poor") || feedback.includes("awful") || feedback.includes("mean")) {
             return frownyFace;
-        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent")|| feedback.includes("love")|| feedback.includes("like")) {
+        } else if (feedback.includes("good") || feedback.includes("great") || feedback.includes("excellent") || feedback.includes("love") || feedback.includes("like")) {
             return smileyFace;
         }
         return null; 
@@ -174,6 +177,11 @@ const FeedbackForm = (props) => {
     return (
         <FormContainer>
             <FormWrapper>
+                <SentimentContainer>
+                    {getSentimentImage() && (
+                        <SentimentImage src={getSentimentImage()} alt="sentiment face" />
+                    )}
+                </SentimentContainer>
                 <Form onSubmit={handleSubmit}>
                     <FormTitle>Feedback Form</FormTitle>
 
@@ -206,12 +214,6 @@ const FeedbackForm = (props) => {
 
                     <Button type="submit">Submit Feedback</Button>
                 </Form>
-
-                <SentimentContainer>
-                    {getSentimentImage() && (
-                        <SentimentImage src={getSentimentImage()} alt="sentiment face" />
-                    )}
-                </SentimentContainer>
             </FormWrapper>
         </FormContainer>
     );
