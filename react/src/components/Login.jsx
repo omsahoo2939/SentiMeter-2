@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import travelersLogo from '<div className="" />travelerslogo.png'; 
+import travelersLogo from '../assets/travelerslogo.png'; 
 
 function Login({ onLoginSuccess }) {
     const [email, setEmail] = useState('');
@@ -39,7 +39,7 @@ function Login({ onLoginSuccess }) {
             alignItems: 'center',
             justifyContent: 'center',
             height: '100vh',
-            background: 'linear-gradient(135deg, #d40000, #8b0000)', 
+            background: 'linear-gradient(135deg, #d40000, #8b0000)', // Smooth blend from red to darker red
             backgroundAttachment: 'fixed',
             backgroundSize: 'cover',
             position: 'relative',
@@ -76,7 +76,7 @@ function Login({ onLoginSuccess }) {
             border: '1px solid #000', 
             borderRadius: '4px',
             background: '#f5f5f5',
-            width: '100%', // Ensures input fields are aligned
+            width: '100%', 
         },
         button: {
             padding: '10px',
