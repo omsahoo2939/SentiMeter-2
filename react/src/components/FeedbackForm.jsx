@@ -59,7 +59,7 @@ const TextArea = styled.textarea`
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 1rem;
-  color: #333;
+  color: #fff;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(5px);
   min-height: 150px;
