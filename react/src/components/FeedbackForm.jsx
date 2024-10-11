@@ -9,7 +9,7 @@ const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #b23131, #ff4d4d);
+  background: linear-gradient(135deg, #b30000, #600000);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 
